@@ -1,0 +1,24 @@
+{
+  "name": "bubblewell",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NikAlexSer/Bubblewell.git"
+  },
+  "author": "NikAlexSer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NikAlexSer/Bubblewell/issues"
+  },
+  "homepage": "https://github.com/NikAlexSer/Bubblewell#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-util": "^3.0.7"
+  }
+}

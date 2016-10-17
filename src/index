@@ -1,0 +1,10 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    %title Bubblewell
+    %link{:rel=>"stylesheet", :href=>"./styles/styles.css"}
+    %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"}
+    %script{:src => "./js/main.js", :type => "application/javascript"}
+    %script{:src => "handlebars-v4.0.5.js", :type => "application/javascript"}
+  %body

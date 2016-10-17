@@ -8,3 +8,5 @@
     %script{:src => "./js/main.js", :type => "application/javascript"}
     %script{:src => "handlebars-v4.0.5.js", :type => "application/javascript"}
   %body
+    .wrapper Ziga
+    .popup Zaga

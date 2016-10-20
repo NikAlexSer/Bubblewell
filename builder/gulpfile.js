@@ -24,13 +24,13 @@ var path = {
   src: { //Пути откуда брать исходники
     html: '../src/*.html',
     js: '../src/js/*.js',
-    style: '../src/styles/styles.sass',
+    style: '../src/styles/styles.scss',
     vendor: '../src/*.js'
   },
   watch: { //Тут мы укажем, за изменением каких файлов мы хотим наблюдать
     html: '../src/*.html',
     js: '../src/js/*.js',
-    style: '../src/styles/*.sass',
+    style: '../src/styles/*.scss',
     vendor: '../src/*.js'
   }
 };

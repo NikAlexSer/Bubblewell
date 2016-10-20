@@ -8,5 +8,14 @@
     %script{:src => "./js/main.js", :type => "application/javascript"}
     %script{:src => "handlebars-v4.0.5.js", :type => "application/javascript"}
   %body
-    .wrapper Ziga
-    .popup Zaga
+    .wrapper
+      .popup Zaga
+      .offer-menu-bar Zog
+      .offers
+        .offer-temp
+          %img
+          %h2 Оформление интерьера
+          .tags
+            %span.theme Недвижимость
+            %span.date Всегда актуально
+            %span.geo Москва

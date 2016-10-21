@@ -1,1 +1,1 @@
-console.log("Ziga!");
+var module=function(){var n={i:5,get:function(){console.log("Текущее значение:"+this.i)},set:function(n){this.i=n},run:function(){console.log("процесс запущен")},jump:function(){console.log("резкое изменение")}};return{facade:function(o){n.set(o.val),n.get(),o.run&&n.run()}}}();module.facade({run:!0,val:10});

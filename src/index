@@ -14,23 +14,25 @@
       .offers
         .offer-temp
           %img
-          %h2 Оформление интерьера
-          .tags
-            %span.theme Недвижимость
-            %span.date Всегда актуально
-            %span.geo Москва
-          .counters
-            %span.like-counter
-            %span.comments-counter
-            %span.feeds-counter
-            %span.adds-counter
-          .author
-            %img.avatar
-            %a.user
-            %span
-          .comments
-            %img.avatar
-            %span.comment
-          .add-comment
-            %img.avatar
-            %input
+          .info
+            %h2 Оформление интерьера
+            .tags
+              %span.theme Недвижимость
+              %span.date Всегда актуально
+              %span.geo Москва
+            .counters
+              %span.like-counter
+              %span.comments-counter
+              %span.feeds-counter
+              %span.adds-counter
+          .comments-panel
+            .author
+              %img.avatar
+              %a.user
+              %span
+            .comments
+              %img.avatar
+              %span.comment
+            .add-comment
+              %img.avatar
+              %input

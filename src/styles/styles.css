@@ -15,4 +15,9 @@ body {
 .popup {
   display: none; }
 
+.offers {
+  background-color: antiquewhite;
+  width: 100%;
+  height: 500px; }
+
 /*# sourceMappingURL=styles.css.map */

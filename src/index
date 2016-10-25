@@ -10,7 +10,21 @@
   %body
     .wrapper
       .popup Zaga
-      .offer-menu-bar Zog
+      %ul.offer-menu-bar
+        %li.filter
+          %a Все
+        %li.filter
+          %a У друзей
+        %li.category
+          %button Спорт
+        %li
+        %li
+          %input
+          %span
+
+
+
+
       .offers
         .offer-temp
           %img

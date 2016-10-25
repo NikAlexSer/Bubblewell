@@ -1,19 +1,36 @@
 body {
-  width: 100%; }
+  width: 100%;
+  margin: 0; }
 
 .wrapper {
-  width: 1018px;
+  width: 974px;
   margin: 0 auto 0 auto;
-  background-color: aliceblue; }
-
-.offer-menu-bar {
-  width: 950px;
-  height: 50px;
-  margin: 20px 36px 20px 36px;
-  background-color: indianred; }
+  background-color: aliceblue;
+  padding: 18px 33px 18px 33px; }
 
 .popup {
   display: none; }
+
+.offer-menu-bar {
+  width: 100%;
+  height: 50px;
+  list-style: none;
+  display: table;
+  padding: 0;
+  margin: 0;
+  border: 1px solid darkgrey;
+  border-radius: 8px; }
+
+li {
+  display: table-cell;
+  vertical-align: middle; }
+
+.filter:first-child {
+  padding: 0 0 0 24px;
+  border: 1px dashed darkgrey; }
+
+a {
+  display: block; }
 
 .offers {
   background-color: antiquewhite;

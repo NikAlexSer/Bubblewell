@@ -26,7 +26,7 @@ var file = new static.Server('.', {
 
 function accept(req, res) {
 
-  if (req.url == '/data.json') {
+  if (req.url == '/users.json') {
     // искусственная задержка для наглядности
     file.serve(req, res);
   }

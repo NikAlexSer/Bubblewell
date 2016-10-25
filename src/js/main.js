@@ -6,7 +6,7 @@ var controller = (function() {
 
   function _receiveData() {
     var _initReq = new XMLHttpRequest();
-    _initReq.open("GET", '../src/nodejs/data.json', false);
+    _initReq.open("GET", '../src/nodejs/users.json', false);
     _initReq.send();
     data = JSON.parse(_initReq.response);
     user = data.user;
@@ -24,7 +24,7 @@ $(function() {
   controller.init();
   $.ajax({
     type: "GET",
-    url: '../src/nodejs/data.json',
+    url: '../src/nodejs/users.json',
     async: true,
     success: function (result) {
       lol = result

@@ -35,18 +35,25 @@
               %span.date Всегда актуально
               %span.geo Москва
             .counters
-              %span.like-counter
-              %span.comments-counter
-              %span.feeds-counter
-              %span.adds-counter
+              %span.like-counter Нравится X
+              %span.comments-counter Коментариев Y
+              %span.feeds-counter Отзывов Z
+              %span.adds-counter Добавили к себе XYZ
           .comments-panel
             .author
               %img.avatar
-              %a.user
-              %span
+              %a.user Гарош
+              %span предлагает
             .comments
-              %img.avatar
-              %span.comment
+              .comments-item
+                %img.avatar
+                %span.comment В Березовском можно в три раза дешевле взять
+              .comments-item
+                %img.avatar
+                %span.comment Приезжай к нам в Голливду блаблабла
+              .comments-item
+                %img.avatar
+                %span.comment ЛокТар Огар!
             .add-comment
               %img.avatar
               %input

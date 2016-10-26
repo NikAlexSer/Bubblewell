@@ -1,20 +1,42 @@
 /**
  * Created by Alexander Nikiforov on 21.10.2016.
  */
+var http = require('http'),
+  offers = require('./offers.json'),
+  users = require('./users.json');
+
+var port = 8081;
+
+var s = http.createServer();
+s.on('request', function(request, response) {
+  response.writeHead(200);
+  console.log(request.method);
+  console.log(request.headers);
+  console.log(request.url);
+  response.write('hi');
+  response.end();
+});
+
+s.listen(port);
+console.log('Browse to http://127.0.0.1:' + port);
+
+
+
 /*var http = require('http'),
-    data = require('./data');
+    offers = require('./offers.json'),
+    users = require('./users.json');
+
 
 var server = new http.Server(); //event
 
 server.listen(1337, '127.0.0.1');
 
-var counter = 0;
 server.on('request', function (req, res) {
-  res.end('ZigaZaga ' + ++counter + ' ' + data.Hello);
+  res.end("ziga");
 });
-*/
 
 
+/*
 var http = require('http');
 var url = require('url');
 var querystring = require('querystring');
@@ -23,11 +45,10 @@ var file = new static.Server('.', {
   cache: 0
 });
 
-
+/*
 function accept(req, res) {
 
   if (req.url == '/users.json') {
-    // искусственная задержка для наглядности
     file.serve(req, res);
   }
   else {

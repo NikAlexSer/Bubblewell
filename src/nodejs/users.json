@@ -1,8 +1,46 @@
 {
-  "user": {
-    "userID": "1488",
-    "name": "Ziga Zaga",
-    "avatar": "https://pp.vk.me/c627119/v627119360/70819/HzuKaioKMeA.jpg"
-  }
-
+  "users": [
+    {
+      "userID": "1",
+      "firstName": "Том",
+      "lastName": "Хэнкс",
+      "avatar": "https://pp.vk.me/c627119/v627119360/70819/HzuKaioKMeA.jpg"
+    },
+    {
+      "userID": "2",
+      "firstName": "Люк",
+      "lastName": "Понебуходящий",
+      "avatar": "https://pp.vk.me/c627119/v627119360/70819/HzuKaioKMeA.jpg"
+    },
+    {
+      "userID": "3",
+      "firstName": "Бильбо",
+      "lastName": "Бэгинс",
+      "avatar": "https://pp.vk.me/c627119/v627119360/70819/HzuKaioKMeA.jpg"
+    },
+    {
+      "userID": "4",
+      "firstName": "Джайна",
+      "lastName": "Праудмур",
+      "avatar": "https://pp.vk.me/c627119/v627119360/70819/HzuKaioKMeA.jpg"
+    },
+    {
+      "userID": "5",
+      "firstName": "Император",
+      "lastName": "Человечества",
+      "avatar": "https://pp.vk.me/c627119/v627119360/70819/HzuKaioKMeA.jpg"
+    },
+    {
+      "userID": "6",
+      "firstName": "Сидорович",
+      "lastName": "???",
+      "avatar": "https://pp.vk.me/c627119/v627119360/70819/HzuKaioKMeA.jpg"
+    },
+    {
+      "userID": "7",
+      "firstName": "Гарри",
+      "lastName": "Поттер",
+      "avatar": "https://pp.vk.me/c627119/v627119360/70819/HzuKaioKMeA.jpg"
+    }
+  ]
 }

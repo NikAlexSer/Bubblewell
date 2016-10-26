@@ -6,7 +6,8 @@ var controller = (function() {
 
   function _receiveData() {
     var _initReq = new XMLHttpRequest();
-    _initReq.open("GET", '../src/nodejs/users.json', false);
+    _initReq.withCredentials = true;
+    _initReq.open("GET", 'http://127.0.0.1:8081/users.json', true);
     _initReq.send();
     data = JSON.parse(_initReq.response);
     user = data.user;

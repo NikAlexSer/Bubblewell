@@ -24,7 +24,7 @@ var path = {
   src: { //Пути откуда брать исходники
     html: '../src/*.html',
     js: '../src/js/*.js',
-    style: '../src/styles/styles.scss',
+    style: '../src/styles/style.scss',
     vendor: '../src/*.js'
   },
   watch: { //Тут мы укажем, за изменением каких файлов мы хотим наблюдать

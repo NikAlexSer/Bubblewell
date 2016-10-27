@@ -1,0 +1,17 @@
+body {
+  width: 100%;
+  margin: 0;
+}
+.wrapper {
+  width: 1010px - 36px;
+  margin: 0 auto 0 auto;
+  background-color: aliceblue;
+  padding: 18px 33px 18px 33px;
+}
+  .popup {
+    display: none;
+  }
+
+@import "offer-menu-bar";
+@import "offer";
+@import "offers-item";

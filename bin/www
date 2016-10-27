@@ -1,12 +1,8 @@
 #!/usr/bin/env node
 
-/**
- * Module dependencies.
- */
-
-var app = require('../app');
-var debug = require('debug')('Bubblewell:server');
-var http = require('http');
+var app = require('../app'),
+    debug = require('debug')('Bubblewell:server'),
+    http = require('http');
 
 /**
  * Get port from environment and store in Express.
@@ -20,6 +16,7 @@ app.set('port', port);
  */
 
 var server = http.createServer(app);
+console.log('Server started on http://127.0.0.1:3000');
 
 /**
  * Listen on provided port, on all network interfaces.
@@ -35,17 +32,14 @@ server.on('listening', onListening);
 
 function normalizePort(val) {
   var port = parseInt(val, 10);
-
   if (isNaN(port)) {
     // named pipe
     return val;
   }
-
   if (port >= 0) {
     // port number
     return port;
   }
-
   return false;
 }
 

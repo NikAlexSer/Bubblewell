@@ -8,16 +8,51 @@
     %script{src: "./javascripts/main.js"}
   %body
     .wrapper
-      .popup Zaga
+      .popup
       %ul.offer-menu-bar
         %li.filter
           %a Все
         %li.filter
           %a У друзей
         %li.category
-          %button Спорт
-        %li
-        %li
-          %input
-          %span
+          %a
+            Спорт
+            %p.dr-icon &#xE040
+        %li.message
+          %span Узнай о предложениях друзей или <a>поделись</a> своими
+        %li.search
+          %div
+            %input.search-field{type: "search", placeholder: "Название или Имя"}
+            %span.search-btn &#xE116
       .offers
+        .offer-temp
+          %img
+          .info
+            %h2 Оформление интерьера
+            .tags
+              %span.theme Недвижимость
+              %span.date Всегда актуально
+              %span.geo Москва
+            .counters
+              %span.like-counter Нравится X
+              %span.comments-counter Коментариев Y
+              %span.feeds-counter Отзывов Z
+              %span.adds-counter Добавили к себе XYZ
+          .comments-panel
+            .author
+              %img.avatar
+              %a.user Гарош
+              %span предлагает
+            .comments
+              .comments-item
+                %img.avatar
+                %span.comment В Березовском можно в три раза дешевле взять
+              .comments-item
+                %img.avatar
+                %span.comment Приезжай к нам в Голливду блаблабла
+              .comments-item
+                %img.avatar
+                %span.comment ЛокТар Огар!
+            .add-comment
+              %img.avatar
+              %input

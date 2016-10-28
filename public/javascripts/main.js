@@ -30,4 +30,5 @@ $(function() {
     }
   });
 
+  $('.offers').load('http://127.0.0.1:3000/lol .offer-temp');
 });

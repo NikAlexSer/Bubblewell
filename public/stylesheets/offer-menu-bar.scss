@@ -1,26 +1,136 @@
+@font-face {
+  font-family: 'LigatureSymbols';
+  src: url('./fonts/LigatureSymbols-2.07.eot');
+  src: url('./fonts/LigatureSymbols-2.07.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/LigatureSymbols-2.07.woff') format('woff'),
+  url('./fonts/LigatureSymbols-2.07.ttf') format('truetype');
+  //font-weight: normal;
+  //font-style: normal;
+}
+
 .offer-menu-bar {
   width: 100%;
-  height: 50px;
+  height: 54px;
   list-style: none;
   display: table;
   padding: 0;
   margin: 0;
+  background-color: white;
   border: 1px solid darkgrey;
   border-radius: 8px;
-}
+  font-family: "PF Agora Sans Pro XThin";
+  font-size: 11pt;
   li {
     display: table-cell;
     vertical-align: middle;
   }
-    .filter:first-child {
-      padding: 0 0 0 24px;
-      border: 1px dashed darkgrey;
-    }
-    .filter:last-child {
+  a {
+    width: inherit;
+    display: block;
+    cursor: pointer;
+  }
+}
 
+.filter {
+  color: #5574AD;
+  a {
+    line-height: 25px;
+    border-right: 1px dashed #e6e6e6;
+    text-align: center;
+    &:first-child {
+      padding-right: 5px;
     }
-    a {
-      display: block;
+  }
+  &:first-child {
+    width: 30px;
+    padding: 0 9px 0 18px;
+  }
+  &:last-child {
+    width: 70px;
+    padding: 0 10px 0 10px;
+  }
+}
+
+.category {
+  height: 25px;
+  width: 80px;
+  padding-left: 15px;
+  vertical-align: middle;
+  p {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: -8px;
+    font-family: 'LigatureSymbols';
+  }
+  a {
+    position: relative;
+    display: block;
+    color: white;
+    text-decoration: none;
+    vertical-align: middle;
+    height: inherit;
+    padding: 5px 10px 0 10px;
+    border-radius: 5px;
+    background: linear-gradient(#dd3c9d, #9e2385);
+    transition: 0.2s;
+    &:hover {
+      background: linear-gradient(#9e2385, #dd3c9d);
     }
+    &:active {
+      background: linear-gradient(#ca339b, #9e2385);
+    }
+  }
+}
+
+.message {
+  font-size: 14pt;
+  padding-left: 35px;
+  a, span {
+    display: inline-block;
+  }
+  a {
+    color: #5574ad;
+    text-decoration: none;
+    border-bottom: 1px dotted #5574ad;
+    line-height: 11pt;
+  }
+}
+
+.search div{
+  position: relative;
+  color: #b8b8b8;
+  border: 1px solid #b8b8b8;
+  border-radius: 6px;
+  height: 25px;
+  margin: 0 15px 0 0;
+  min-height: 20px;
+  .search-field {
+    font-style: italic;
+    position: relative;
+    top: -6px;
+    left: 5px;
+    width: 195px;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    vertical-align: middle;
+  }
+  .search-btn {
+    border-right: 1px dotted #b8b8b8;
+    margin-right: -5px;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    transform: rotate3d(0,1,0,180deg);
+    font-size: 20pt;
+    font-family: 'LigatureSymbols';
+  }
+}
+
+
+
+
 
 

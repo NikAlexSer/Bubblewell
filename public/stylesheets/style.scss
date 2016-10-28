@@ -1,11 +1,11 @@
 body {
   width: 100%;
   margin: 0;
+  background-color: lightsteelblue;
 }
 .wrapper {
   width: 1010px - 36px;
   margin: 0 auto 0 auto;
-  background-color: aliceblue;
   padding: 18px 33px 18px 33px;
 }
   .popup {
@@ -13,5 +13,5 @@ body {
   }
 
 @import "offer-menu-bar";
-@import "offer";
+@import "offers";
 @import "offers-item";

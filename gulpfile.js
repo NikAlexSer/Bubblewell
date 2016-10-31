@@ -13,7 +13,7 @@ var path = {
     style: './public/stylesheets/style.scss'
   },
   watch: { //Тут мы укажем, за изменением каких файлов мы хотим наблюдать
-    style: './public/stylesheets/style.scss'
+    style: './public/stylesheets/*.scss'
   }
 };
 

@@ -2,6 +2,157 @@
   "offers": [
     {
       "offerID": "1",
+      "name": "Отпуск с семьей на море",
+      "type": "Путешествия",
+      "time": "Всегда актуально",
+      "location": "Москва",
+      "image": "https://pp.vk.me/c627119/v627119360/70819/HzuKaioKMeA.jpg",
+      "authorID": "4",
+      "social-counters": {
+        "like-counter": "22",
+        "comment-counter": "3",
+        "feed-counter": "3",
+        "add-counter": "5"
+      },
+      "already-liked": ["1", "2", "3"]
+    },
+    {
+      "offerID": "2",
+      "name": "Оформление интерьера",
+      "type": "Недвижимость",
+      "time": "Всегда актуально",
+      "location": "Москва",
+      "image": "https://pp.vk.me/c627119/v627119360/70819/HzuKaioKMeA.jpg",
+      "authorID": "4",
+      "social-counters": {
+        "like-counter": "22",
+        "comment-counter": "3",
+        "feed-counter": "3",
+        "add-counter": "5"
+      },
+      "already-liked": ["1", "2", "3"],
+      "comments": [
+        {
+          "userID":"1",
+          "message": "В березовском можно в 3 раза дешевле взять"
+        },
+        {
+          "userID":"2",
+          "message": "Приезжай к нам в Голливуд, есть приличная квартирка"
+        },
+        {
+          "userID":"3",
+          "message": "WaTaFuck..."
+        }
+      ]
+    },
+    {
+      "offerID": "3",
+      "name": "Оформление интерьера",
+      "type": "Недвижимость",
+      "time": "Всегда актуально",
+      "location": "Москва",
+      "image": "https://pp.vk.me/c627119/v627119360/70819/HzuKaioKMeA.jpg",
+      "authorID": "4",
+      "social-counters": {
+        "like-counter": "22",
+        "comment-counter": "3",
+        "feed-counter": "3",
+        "add-counter": "5"
+      },
+      "already-liked": ["1", "2", "3"]
+    },
+    {
+      "offerID": "3",
+      "name": "Оформление интерьера",
+      "type": "Недвижимость",
+      "time": "Всегда актуально",
+      "location": "Москва",
+      "image": "https://pp.vk.me/c627119/v627119360/70819/HzuKaioKMeA.jpg",
+      "authorID": "4",
+      "social-counters": {
+        "like-counter": "22",
+        "comment-counter": "3",
+        "feed-counter": "3",
+        "add-counter": "5"
+      },
+      "already-liked": ["1", "2", "3"],
+      "comments": [
+        {
+          "userID":"1",
+          "message": "В березовском можно в 3 раза дешевле взять"
+        },
+        {
+          "userID":"2",
+          "message": "Приезжай к нам в Голливуд, есть приличная квартирка"
+        },
+        {
+          "userID":"3",
+          "message": "WaTaFuck..."
+        }
+      ]
+    },
+    {
+      "offerID": "4",
+      "name": "Оформление интерьера",
+      "type": "Недвижимость",
+      "time": "Всегда актуально",
+      "location": "Москва",
+      "image": "https://pp.vk.me/c627119/v627119360/70819/HzuKaioKMeA.jpg",
+      "authorID": "4",
+      "social-counters": {
+        "like-counter": "22",
+        "comment-counter": "3",
+        "feed-counter": "3",
+        "add-counter": "5"
+      },
+      "already-liked": ["1", "2", "3"],
+      "comments": [
+        {
+          "userID":"1",
+          "message": "В березовском можно в 3 раза дешевле взять"
+        },
+        {
+          "userID":"2",
+          "message": "Приезжай к нам в Голливуд, есть приличная квартирка"
+        },
+        {
+          "userID":"3",
+          "message": "WaTaFuck..."
+        }
+      ]
+    },{
+      "offerID": "5",
+      "name": "Оформление интерьера",
+      "type": "Недвижимость",
+      "time": "Всегда актуально",
+      "location": "Москва",
+      "image": "https://pp.vk.me/c627119/v627119360/70819/HzuKaioKMeA.jpg",
+      "authorID": "4",
+      "social-counters": {
+        "like-counter": "22",
+        "comment-counter": "3",
+        "feed-counter": "3",
+        "add-counter": "5"
+      },
+      "already-liked": ["1", "2", "3"],
+      "comments": [
+        {
+          "userID":"1",
+          "message": "В березовском можно в 3 раза дешевле взять"
+        },
+        {
+          "userID":"2",
+          "message": "Приезжай к нам в Голливуд, есть приличная квартирка"
+        },
+        {
+          "userID":"3",
+          "message": "WaTaFuck..."
+        }
+      ]
+    },
+    {
+      "offerID": "6",
       "name": "Оформление интерьера",
       "type": "Недвижимость",
       "time": "Всегда актуально",

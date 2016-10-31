@@ -3,9 +3,10 @@ var express = require('express'),
     favicon = require('serve-favicon'),
     data = require('./routes/data'),
     routes = require('./routes/index'),
-    lol = require('./routes/lol'),
+    offerTemplate = require('./routes/offer-template'),
     logger = require('morgan'),
     engines = require('consolidate'),
+    api = require('./routes/api');
     app = express();
 
 // view engine setup
@@ -28,7 +29,8 @@ app.use(require('node-sass-middleware')({
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/', data);
-app.use('/', lol);
+app.use('/', offerTemplate);
+app.use('/', api);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

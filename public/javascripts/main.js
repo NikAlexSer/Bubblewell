@@ -20,15 +20,24 @@ var controller = (function() {
 
 $(function() {
   //controller.init();
-  var lol;
+  var users,
+      offers;
   $.ajax({
     dataType: 'json',
     url: 'http://127.0.0.1:3000/users',
     success: function(jsondata){
-      lol = jsondata;
-      console.log(lol)
+      users = jsondata;
+      console.log(users)
+    }
+  });
+  $.ajax({
+    dataType: 'json',
+    url: 'http://127.0.0.1:3000/offers',
+    success: function(jsondata){
+      offers = jsondata;
+      console.log(offers)
     }
   });
 
-  $('.offers').load('http://127.0.0.1:3000/lol .offer-temp');
+  $('.offers').load('http://127.0.0.1:3000/offerTemplate');
 });

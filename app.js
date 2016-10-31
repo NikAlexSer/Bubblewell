@@ -1,9 +1,7 @@
 var express = require('express'),
     path = require('path'),
     favicon = require('serve-favicon'),
-    data = require('./routes/data'),
-    routes = require('./routes/index'),
-    offerTemplate = require('./routes/offer-template'),
+    helpers = require('handlebars-helpers')(),
     logger = require('morgan'),
     engines = require('consolidate'),
     api = require('./routes/api');
@@ -27,9 +25,6 @@ app.use(require('node-sass-middleware')({
 }));
 
 app.use(express.static(path.join(__dirname, 'public')));
-app.use('/', routes);
-app.use('/', data);
-app.use('/', offerTemplate);
 app.use('/', api);
 
 // catch 404 and forward to error handler

@@ -24,7 +24,7 @@ $(function() {
       offers;
   $.ajax({
     dataType: 'json',
-    url: 'http://127.0.0.1:3000/users',
+    url: 'http://127.0.0.1:3000/api/users',
     success: function(jsondata){
       users = jsondata;
       console.log(users)
@@ -32,12 +32,12 @@ $(function() {
   });
   $.ajax({
     dataType: 'json',
-    url: 'http://127.0.0.1:3000/offers',
+    url: 'http://127.0.0.1:3000/api/offers',
     success: function(jsondata){
       offers = jsondata;
       console.log(offers)
     }
   });
 
-  $('.offers').load('http://127.0.0.1:3000/offerTemplate');
+  $('.offers').load('http://127.0.0.1:3000/api/render');
 });

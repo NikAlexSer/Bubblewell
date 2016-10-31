@@ -1,40 +1,54 @@
-{{#each offers}}
+{{#each offers as |glob-offers|}}
     <div id="{{offerID}}" class="offer">
-
-        <img src="{{image}}" class="image">
-
+        <div class="image"><img src="{{image}}" class="image"></div>
         <div class="info">
-            <h2>{{name}}</h2>
+            <span class="name">{{name}}</span>
             <div class="tags">
-                <span class="theme">{{type}}</span>
-                <span class="date">Всегда актуально</span>
-                <span class="geo">Москва</span></div>
+                <div class="theme">{{type}}</div>
+                <div class="date">{{time}}</div>
+                <div class="geo">{{location}}</div>
+            </div>
             <div class="counters">
-                <span class="like-counter">Нравится X</span>
-                <span class="comments-counter">Коментариев Y</span>
-                <span class="feeds-counter">Отзывов Z</span>
-                <span class="adds-counter">Добавили к себе XYZ</span></div>
+                {{#if social-counters.like-counter}}
+                    <span class="like-counter">Нравится {{social-counters.like-counter}}</span>
+                {{/if}}
+                {{#if social-counters.comment-counter}}
+                    <span class="comments-counter">Коментариев {{social-counters.comment-counter}}</span>
+                {{/if}}
+                {{#if social-counters.feed-counter}}
+                    <span class="feeds-counter">Отзывов {{social-counters.feed-counter}}</span>
+                {{/if}}
+                {{#if social-counters.add-counter}}
+                    <span class="adds-counter">Добавили к себе {{social-counters.add-counter}}</span></div>
+                {{/if}}
         </div>
         <div class="comments-panel">
-            <div class="author">
-                <img class="avatar">
-                <a class="user">Гарош</a>
-                <span>предлагает</span></div>
+            {{#each ../users as |users-av|}}
+                {{#compare users-av.userID "==" glob-offers.authorID}}
+                <div class="author">
+                   <div>
+                       <img src="{{users-av.avatar}}" class="avatar">
+                   </div>
+                    <div>
+                        <a class="user">{{users-av.firstName}} {{users-av.lastName}}</a>
+                        <span>предлагает</span>
+                    </div>
+                </div>
+                {{/compare}}
+            {{/each}}
             <div class="comments">
-                {{#if comments}}
+                {{#each glob-offers.comments as |comment-lol|}}
+                {{#if this}}
                     <div class="comments-item">
-                        <img class="avatar">
-                        <span class="comment">В Березовском можно в три раза дешевле взять</span>
-                    </div>
-                    <div class="comments-item">
-                        <img class="avatar">
-                        <span class="comment">Приезжай к нам в Голливду блаблабла</span>
-                    </div>
-                    <div class="comments-item">
-                        <img class="avatar">
-                        <span class="comment">ЛокТар Огар!</span>
+                        {{#each ../../users as |users-com|}}
+                            {{#compare comment-lol.userID "==" users-com.userID}}
+                                <img src="{{users-com.avatar}}" class="avatar">
+                            {{/compare}}
+                        {{/each}}
+                        <span class="comment">{{message}}</span>
                     </div>
                 {{/if}}
+                {{/each}}
             </div>
             <div class="add-comment">
                 <img class="avatar">
@@ -43,3 +57,4 @@
         </div>
     </div>
 {{/each}}
+

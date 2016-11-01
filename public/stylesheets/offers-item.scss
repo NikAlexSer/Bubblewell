@@ -1,6 +1,5 @@
 $offerWidth: 220px;
 
-
 .offer {
   position: relative;
   display: inline-block;
@@ -15,7 +14,48 @@ $offerWidth: 220px;
   vertical-align: baseline;
   overflow: hidden;
   width: $offerWidth;
+  .hover {
+    div {
+      background-color: #abc9e8;
+      cursor: pointer;
+    }
+    position: absolute;
+    z-index: 50;
+    top: 0px;
+    display: none;
+    width: 100%;
+    color: #f5f8fc;
+    font-family: "PF Agora Sans Pro";
+    font-size: 10pt;
+    text-shadow: 0 0 0 #f5f8fc;
+    text-align: center;
+    .buttons {
+      padding: 0;
+      width: 100%;
+      position: absolute;
+      top: -20px;
+      z-index: 50;
+      font-family: LigatureSymbols;
+      color: #b7b7b7;
+      font-size: 30pt;
+      list-style: none;
+      display: table;
+      li {
+        display: table-cell;
+        vertical-align: middle;
+        cursor: pointer;
+      }
+    }
+  }
 }
+.offer:hover {
+  border: 1px solid #abc9e8;
+  box-shadow: 2px -2px rgba(240,240,240, 100%);
+  .hover {
+    display: block;
+  }
+}
+
 
 .offer .image{
   position: relative;
@@ -55,7 +95,7 @@ $offerWidth: 220px;
     position: absolute;
     bottom: 10px;
     color: #a8a8a8;
-    font-size: 10pt;
+    font-size: 8.5pt;
     margin-bottom: -5px;
   }
 }
@@ -117,5 +157,6 @@ $offerWidth: 220px;
   }
   .add-comment {
     height: 40px;
+    display: none;
   }
 }

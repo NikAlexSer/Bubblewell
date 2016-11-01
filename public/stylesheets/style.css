@@ -155,6 +155,41 @@ body {
   vertical-align: baseline;
   overflow: hidden;
   width: 220px; }
+  .offer .hover {
+    position: absolute;
+    z-index: 50;
+    top: 0px;
+    display: none;
+    width: 100%;
+    color: #f5f8fc;
+    font-family: "PF Agora Sans Pro";
+    font-size: 10pt;
+    text-shadow: 0 0 0 #f5f8fc;
+    text-align: center; }
+    .offer .hover div {
+      background-color: #abc9e8;
+      cursor: pointer; }
+    .offer .hover .buttons {
+      padding: 0;
+      width: 100%;
+      position: absolute;
+      top: -20px;
+      z-index: 50;
+      font-family: LigatureSymbols;
+      color: #b7b7b7;
+      font-size: 30pt;
+      list-style: none;
+      display: table; }
+      .offer .hover .buttons li {
+        display: table-cell;
+        vertical-align: middle;
+        cursor: pointer; }
+
+.offer:hover {
+  border: 1px solid #abc9e8;
+  box-shadow: 2px -2px #f0f0f0; }
+  .offer:hover .hover {
+    display: block; }
 
 .offer .image {
   position: relative;
@@ -187,7 +222,7 @@ body {
     position: absolute;
     bottom: 10px;
     color: #a8a8a8;
-    font-size: 10pt;
+    font-size: 8.5pt;
     margin-bottom: -5px; }
     .info .counters span {
       cursor: pointer; }
@@ -238,4 +273,5 @@ body {
       margin: auto;
       max-height: 25px; }
   .comments-panel .add-comment {
-    height: 40px; }
+    height: 40px;
+    display: none; }

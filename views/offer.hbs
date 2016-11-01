@@ -1,60 +1,71 @@
 {{#each offers as |glob-offers|}}
-    <div id="{{offerID}}" class="offer">
-        <div class="image"><img src="{{image}}" class="image"></div>
-        <div class="info">
-            <span class="name">{{name}}</span>
-            <div class="tags">
-                <div class="theme">{{type}}</div>
-                <div class="date">{{time}}</div>
-                <div class="geo">{{location}}</div>
+    {{#if visible}}
+        <div id="{{offerID}}" class="offer">
+            <div class="hover">
+                <div>Ознакомиться с предложением</div>
+                <ul class="buttons">
+                    <li class="fav">&#xE02f</li>
+                    <li class="like">&#xE06e</li>
+                    <li class="add">&#xE108</li>
+                    <li class="com">&#xE034</li>
+                </ul>
             </div>
-            <div class="counters">
-                {{#if social-counters.like-counter}}
-                    <span class="like-counter">Нравится {{social-counters.like-counter}}</span>
-                {{/if}}
-                {{#if social-counters.comment-counter}}
-                    <span class="comments-counter">Коментариев {{social-counters.comment-counter}}</span>
-                {{/if}}
-                {{#if social-counters.feed-counter}}
-                    <span class="feeds-counter">Отзывов {{social-counters.feed-counter}}</span>
-                {{/if}}
-                {{#if social-counters.add-counter}}
-                    <span class="adds-counter">Добавили к себе {{social-counters.add-counter}}</span></div>
-                {{/if}}
-        </div>
-        <div class="comments-panel">
-            {{#each ../users as |users-av|}}
-                {{#compare users-av.userID "==" glob-offers.authorID}}
-                <div class="author">
-                   <div>
-                       <img src="{{users-av.avatar}}" class="avatar">
-                   </div>
-                    <div>
-                        <a class="user">{{users-av.firstName}} {{users-av.lastName}}</a>
-                        <span>предлагает</span>
-                    </div>
+            <div class="image"><img src="{{image}}" class="image"></div>
+            <div class="info">
+                <span class="name">{{name}}</span>
+                <div class="tags">
+                    <div class="theme">{{type}}</div>
+                    <div class="date">{{time}}</div>
+                    <div class="geo">{{location}}</div>
                 </div>
-                {{/compare}}
-            {{/each}}
-            <div class="comments">
-                {{#each glob-offers.comments as |comment-lol|}}
-                {{#if this}}
-                    <div class="comments-item">
-                        {{#each ../../users as |users-com|}}
-                            {{#compare comment-lol.userID "==" users-com.userID}}
-                                <img src="{{users-com.avatar}}" class="avatar">
-                            {{/compare}}
-                        {{/each}}
-                        <span class="comment">{{message}}</span>
-                    </div>
+            <div class="counters">
+                {{#if socialCounters.likeCounter}}
+                    <span class="like-counter">Нравится {{socialCounters.likeCounter}}</span>
                 {{/if}}
-                {{/each}}
+                {{#if socialCounters.commentCounter}}
+                    <span class="comments-counter">Коментариев {{socialCounters.commentCounter}}</span>
+                {{/if}}
+                {{#if socialCounters.feedCounter}}
+                    <span class="feeds-counter">Отзывов {{socialCounters.feedCounter}}</span>
+                {{/if}}
+                {{#if socialCounters.addCounter}}
+                    <span class="adds-counter">Добавили к себе {{socialCounters.addCounter}}</span></div>
+                {{/if}}
             </div>
-            <div class="add-comment">
-                <img class="avatar">
-                <input>
+            <div class="comments-panel">
+                {{#each ../users as |users-av|}}
+                    {{#compare users-av.userID "==" glob-offers.authorID}}
+                        <div class="author">
+                            <div>
+                                <img src="{{users-av.avatar}}" class="avatar">
+                            </div>
+                            <div>
+                                <a class="user">{{users-av.firstName}} {{users-av.lastName}}</a>
+                                <span>предлагает</span>
+                            </div>
+                        </div>
+                    {{/compare}}
+                {{/each}}
+                <div class="comments">
+                    {{#each glob-offers.comments as |comment-lol|}}
+                        {{#if this}}
+                            <div class="comments-item">
+                                {{#each ../../users as |users-com|}}
+                                    {{#compare comment-lol.userID "==" users-com.userID}}
+                                        <img src="{{users-com.avatar}}" class="avatar">
+                                    {{/compare}}
+                                {{/each}}
+                                <span class="comment">{{message}}</span>
+                            </div>
+                        {{/if}}
+                    {{/each}}
+                </div>
+                <div class="add-comment">
+                    <img class="avatar">
+                    <input>
+                </div>
             </div>
         </div>
-    </div>
+    {{/if}}
 {{/each}}
 

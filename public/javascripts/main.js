@@ -1,43 +1,72 @@
 var controller = (function() {
   var
-    options = {},
-    data;
+    users,
+    offers;
 
-  function _receiveData() {
-    var _initReq = new XMLHttpRequest();
-    _initReq.withCredentials = true;
-    _initReq.open("GET", 'http://127.0.0.1:3000/users', true);
-    _initReq.send();
-    console.log(_initReq.response);
-    data = _initReq.response;
-    console.log(data);
+  function _getUsers() {
+    $.ajax({
+      dataType: 'json',
+      url: 'http://127.0.0.1:3000/api/users',
+      success: function(jsondata){
+        users = jsondata.users;
+        console.log(users)
+      }
+    });
+  }
+  function _getOffers() {
+    $.ajax({
+      dataType: 'json',
+      url: 'http://127.0.0.1:3000/api/offers',
+      success: function(jsondata){
+        offers = jsondata.offers;
+        console.log(offers)
+      }
+    });
   }
 
+  function _init() {
+    _getOffers();
+    _getUsers();
+  }
+  _init();
+
+  function _setEventsHandler() {
+    $('.offers').on('click', '.com', function () {
+      $(this).css({color: "#5574ad"}).parent().parent().parent().find('.add-comment').toggle();
+    });
+    $('.offers').on('click', '.like', function () {
+      var lol = parseInt($(this).parent().parent().parent().attr('id')) - 1;
+      $(this).css({color: "#b13897"});
+      offers[lol].socialCounters.likeCounter = parseInt(offers[lol].socialCounters.likeCounter) + 1;
+      console.log(offers[lol]);
+      console.log(offers[lol].socialCounters.likeCounter);
+      _saveData()
+    });
+  }
+
+  function _saveData() {
+    console.log(JSON.stringify(offers));
+    $.ajax({
+      type: 'POST',
+      url: "http://127.0.0.1:3000/api/save",
+      data: JSON.stringify(offers),
+      dataType: "JSON",
+      success: function () {
+        console.log('Ziga');
+      }
+  });
+
+  }
   return {
-    init: function init() {_receiveData()}
+    render: function () {
+      $('.offers').load('http://127.0.0.1:3000/api/render');
+      _setEventsHandler();
+    }
   };
 }());
 
 $(function() {
-  //controller.init();
-  var users,
-      offers;
-  $.ajax({
-    dataType: 'json',
-    url: 'http://127.0.0.1:3000/api/users',
-    success: function(jsondata){
-      users = jsondata;
-      console.log(users)
-    }
-  });
-  $.ajax({
-    dataType: 'json',
-    url: 'http://127.0.0.1:3000/api/offers',
-    success: function(jsondata){
-      offers = jsondata;
-      console.log(offers)
-    }
-  });
 
-  $('.offers').load('http://127.0.0.1:3000/api/render');
+  controller.render();
+
 });

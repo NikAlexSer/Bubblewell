@@ -2,6 +2,7 @@ var express = require('express'),
     path = require('path'),
     favicon = require('serve-favicon'),
     helpers = require('handlebars-helpers')(),
+    bodyParser = require('body-parser'),
     logger = require('morgan'),
     engines = require('consolidate'),
     api = require('./routes/api');
@@ -24,6 +25,10 @@ app.use(require('node-sass-middleware')({
   sourceMap: true
 }));
 
+
+app.use(bodyParser.json()); // support json encoded bodies
+app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
+
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', api);
 
@@ -33,6 +38,10 @@ app.use(function(req, res, next) {
   err.status = 404;
   next(err);
 });
+
+
+
+
 
 // dev error handler
 if (app.get('env') === 'development') {

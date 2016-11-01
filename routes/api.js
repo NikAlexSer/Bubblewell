@@ -15,7 +15,6 @@ router.get('/', function(req, res, next){
  * Получение JSON офферов
 **/
 router.get('/api/offers', function(req, res, next){
-    console.log(offers);
     res.send(offers);
 });
 
@@ -23,7 +22,6 @@ router.get('/api/offers', function(req, res, next){
  * Получение JSON юзеров
  **/
 router.get('/api/users', function(req, res, next){
-  console.log(users);
   res.send(users);
 });
 
@@ -34,6 +32,17 @@ router.get('/api/render', function(req, res, next){
   console.log(users.users[1].firstName + ", Я твой отец!");
   res.render('offer.hbs', {
     offers: offers.offers,
+    users: users.users
+  });
+});
+
+/**
+ * Получение обновленных данных сервером
+ **/
+router.post('/api/save', function(req, res, next){
+  console.log(req.body.name)
+  res.render('offer.hbs', {
+    offers: req.offers,
     users: users.users
   });
 });

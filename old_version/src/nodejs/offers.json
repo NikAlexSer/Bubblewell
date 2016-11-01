@@ -8,11 +8,11 @@
       "location": "Москва",
       "image": "https://pp.vk.me/c627119/v627119360/70819/HzuKaioKMeA.jpg",
       "authorID": "4",
-      "social-counters": {
-        "like-counter": "22",
-        "comment-counter": "3",
-        "feed-counter": "3",
-        "add-counter": "5"
+      "socialCounters": {
+        "likeCounter": "22",
+        "commentCounter": "3",
+        "feedCounter": "3",
+        "addCounter": "5"
       },
       "already-liked": ["1", "2", "3"],
       "comments": [

@@ -8,13 +8,18 @@
       "location": "Тиват, Черногория",
       "image": "http://www.hqwallpapers.ru/wallpapers/nature/yahty-i-more.jpg",
       "authorID": "4",
-      "social-counters": {
-        "like-counter": "34",
-        "comment-counter": "",
-        "feed-counter": "",
-        "add-counter": "13"
+      "visible": true,
+      "socialCounters": {
+        "likeCounter": "34",
+        "commentCounter": "",
+        "feedCounter": "",
+        "addCounter": "13"
       },
-      "already-liked": ["1", "2", "3"],
+      "already-liked": [
+        "1",
+        "2",
+        "3"
+      ],
       "comments": []
     },
     {
@@ -25,24 +30,29 @@
       "location": "Москва",
       "image": "http://s.pikabu.ru/post_img/2013/07/29/6/1375081510_1669157263.jpg",
       "authorID": "1",
-      "social-counters": {
-        "like-counter": "22",
-        "comment-counter": "3",
-        "feed-counter": "3",
-        "add-counter": "5"
+      "visible": true,
+      "socialCounters": {
+        "likeCounter": "22",
+        "commentCounter": "3",
+        "feedCounter": "3",
+        "addCounter": "5"
       },
-      "already-liked": ["1", "2", "3"],
+      "already-liked": [
+        "1",
+        "2",
+        "3"
+      ],
       "comments": [
         {
-          "userID":"1",
+          "userID": "1",
           "message": "В березовском можно в 3 раза дешевле взять"
         },
         {
-          "userID":"2",
+          "userID": "2",
           "message": "Приезжай к нам в Голливуд, есть приличная квартирка"
         },
         {
-          "userID":"3",
+          "userID": "3",
           "message": "WaTaFuck..."
         }
       ]
@@ -55,24 +65,29 @@
       "location": "Москва",
       "image": "http://risovach.ru/upload/2012/11/generator/pidrila-ebanaya_3813534_orig_.jpeg",
       "authorID": "2",
-      "social-counters": {
-        "like-counter": "22",
-        "comment-counter": "3",
-        "feed-counter": "3",
-        "add-counter": "5"
+      "visible": true,
+      "socialCounters": {
+        "likeCounter": "22",
+        "commentCounter": "3",
+        "feedCounter": "3",
+        "addCounter": "5"
       },
-      "already-liked": ["1", "2", "3"],
+      "already-liked": [
+        "1",
+        "2",
+        "3"
+      ],
       "comments": [
         {
-          "userID":"1",
+          "userID": "1",
           "message": "В березовском можно в 3 раза дешевле взять"
         },
         {
-          "userID":"2",
+          "userID": "2",
           "message": "Приезжай к нам в Голливуд, есть приличная квартирка"
         },
         {
-          "userID":"3",
+          "userID": "3",
           "message": "WaTaFuck..."
         }
       ]
@@ -85,24 +100,29 @@
       "location": "Империум Человечества",
       "image": "http://pics.livejournal.com/che_ratnik/pic/001szqp3",
       "authorID": "5",
-      "social-counters": {
-        "like-counter": "22",
-        "comment-counter": "3",
-        "feed-counter": "3",
-        "add-counter": "5"
+      "visible": true,
+      "socialCounters": {
+        "likeCounter": "22",
+        "commentCounter": "3",
+        "feedCounter": "3",
+        "addCounter": "5"
       },
-      "already-liked": ["1", "2", "3"],
+      "already-liked": [
+        "1",
+        "2",
+        "3"
+      ],
       "comments": [
         {
-          "userID":"1",
+          "userID": "1",
           "message": "В березовском видел чернокнижка"
         },
         {
-          "userID":"2",
+          "userID": "2",
           "message": "Приезжай к нам в Голливуд, тут слаанешитки"
         },
         {
-          "userID":"3",
+          "userID": "3",
           "message": "WaTaFuck..."
         }
       ]
@@ -115,40 +135,50 @@
       "location": "Москва",
       "image": "https://pp.vk.me/c627119/v627119360/70819/HzuKaioKMeA.jpg",
       "authorID": "6",
-      "social-counters": {
-        "like-counter": "22",
-        "comment-counter": "3",
-        "feed-counter": "3",
-        "add-counter": "5"
+      "socialCounters": {
+        "likeCounter": "22",
+        "commentCounter": "3",
+        "feedCounter": "3",
+        "addCounter": "5"
       },
-      "already-liked": ["1", "2", "3"],
+      "already-liked": [
+        "1",
+        "2",
+        "3"
+      ],
       "comments": []
-    },{
+    },
+    {
       "offerID": "6",
       "name": "Оформление интерьера",
       "type": "Недвижимость",
       "time": "Всегда актуально",
       "location": "Москва",
-      "image": "https://pp.vk.me/c627119/v627119360/70819/HzuKaioKMeA.jpg",
+      "image": "http://cs6.pikabu.ru/images/big_size_comm/2015-01_1/14203017957828.jpg",
       "authorID": "1",
-      "social-counters": {
-        "like-counter": "22",
-        "comment-counter": "3",
-        "feed-counter": "3",
-        "add-counter": "5"
+      "visible": true,
+      "socialCounters": {
+        "likeCounter": "22",
+        "commentCounter": "3",
+        "feedCounter": "3",
+        "addCounter": "5"
       },
-      "already-liked": ["1", "2", "3"],
+      "already-liked": [
+        "1",
+        "2",
+        "3"
+      ],
       "comments": [
         {
-          "userID":"1",
+          "userID": "1",
           "message": "В березовском можно в 3 раза дешевле взять"
         },
         {
-          "userID":"2",
+          "userID": "2",
           "message": "Приезжай к нам в Голливуд, есть приличная квартирка"
         },
         {
-          "userID":"3",
+          "userID": "3",
           "message": "WaTaFuck..."
         }
       ]
@@ -161,57 +191,75 @@
       "location": "Москва",
       "image": "https://pp.vk.me/c627119/v627119360/70819/HzuKaioKMeA.jpg",
       "authorID": "2",
-      "social-counters": {
-        "like-counter": "22",
-        "comment-counter": "3",
-        "feed-counter": "3",
-        "add-counter": "5"
+      "visible": true,
+      "socialCounters": {
+        "likeCounter": "22",
+        "commentCounter": "3",
+        "feedCounter": "3",
+        "addCounter": "5"
       },
-      "already-liked": ["1", "2", "3"],
+      "already-liked": [
+        "1",
+        "2",
+        "3"
+      ],
       "comments": [
         {
-          "userID":"1",
+          "userID": "1",
           "message": "В березовском можно в 3 раза дешевле взять"
         },
         {
-          "userID":"2",
+          "userID": "2",
           "message": "Приезжай к нам в Голливуд, есть приличная квартирка"
         },
         {
-          "userID":"3",
+          "userID": "3",
           "message": "WaTaFuck..."
         }
       ]
     },
     {
-    "offerID": "8",
-    "name": "Оформление интерьера",
-    "type": "Недвижимость",
-    "time": "Всегда актуально",
-    "location": "Москва",
-    "image": "http://s.pikabu.ru/post_img/2013/07/29/6/1375081510_1669157263.jpg",
-    "authorID": "5",
-    "social-counters": {
-      "like-counter": "22",
-      "comment-counter": "3",
-      "feed-counter": "3",
-      "add-counter": "5"
-    },
-    "already-liked": ["1", "2", "3"],
-    "comments": [
-    {
-    "userID":"1",
-    "message": "В березовском можно в 3 раза дешевле взять"
-    },
-    {
-    "userID":"2",
-    "message": "Приезжай к нам в Голливуд, есть приличная квартирка"
-    },
-    {
-    "userID":"3",
-    "message": "WaTaFuck..."
+      "offerID": "8",
+      "name": "Оформление интерьера",
+      "type": "Недвижимость",
+      "time": "Всегда актуально",
+      "location": "Москва",
+      "image": "http://s.pikabu.ru/post_img/2013/07/29/6/1375081510_1669157263.jpg",
+      "authorID": "5",
+      "visible": true,
+      "socialCounters": {
+        "likeCounter": "22",
+        "commentCounter": "3",
+        "feedCounter": "3",
+        "addCounter": "5"
+      },
+      "already-liked": [
+        "1",
+        "2",
+        "3"
+      ],
+      "comments": [
+        {
+          "userID": "1",
+          "message": "В березовском можно в 3 раза дешевле взять"
+        },
+        {
+          "userID": "2",
+          "message": "Приезжай к нам в Голливуд, есть приличная квартирка"
+        },
+        {
+          "userID": "4",
+          "message": "WaTaFuck..."
+        },
+        {
+          "userID": "2",
+          "message": "WaTaFuck..."
+        },
+        {
+          "userID": "6",
+          "message": "WaTaFuck..."
+        }
+      ]
     }
-    ]
-  }
   ]
 }

@@ -40,26 +40,32 @@ var controller = (function() {
       offers[lol].socialCounters.likeCounter = parseInt(offers[lol].socialCounters.likeCounter) + 1;
       console.log(offers[lol]);
       console.log(offers[lol].socialCounters.likeCounter);
-      _saveData()
+      _saveData($(this).parent().parent().parent().attr('id'))
     });
   }
 
-  function _saveData() {
-    console.log(JSON.stringify(offers));
-    $.ajax({
-      type: 'POST',
-      url: "http://127.0.0.1:3000/api/save",
-      data: JSON.stringify(offers),
-      dataType: "JSON",
-      success: function () {
-        console.log('Ziga');
-      }
-  });
-
+  function _saveData(lol) {
+    console.log(JSON.stringify(offers),lol);
+  //   $.ajax({
+  //     type: 'POST',
+  //     url: "http://127.0.0.1:3000/api/save",
+  //     data: JSON.stringify(offers),
+  //     dataType: "JSON",
+  //     success: function () {
+  //       console.log('Ziga');
+  //     }
+  // });
+    
+    $.post('http://127.0.0.1:3000/api/like/', {
+      id: lol
+    }, function(){
+      console.log("AZAZAAZAZAZAZ", lol);
+      $('.offers #'+lol).replaceWith().load('http://127.0.0.1:3000/api/renderlike/' + lol);
+    })
   }
   return {
     render: function () {
-      $('.offers').load('http://127.0.0.1:3000/api/render');
+      $('.offers').load('http://127.0.0.1:3000/api/render/');
       _setEventsHandler();
     }
   };

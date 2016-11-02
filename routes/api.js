@@ -39,13 +39,41 @@ router.get('/api/render', function(req, res, next){
 /**
  * Получение обновленных данных сервером
  **/
-router.post('/api/save', function(req, res, next){
-  console.log(req.body.name)
+
+var ziga;
+
+router.post('/api/like', function(req, res, next){
+  console.log(req.body.id, "TYT  BIL VIKTOR", req.body);
+  // LIKE ++ PO ID
+  var offer = getOfferById(req.body.id);
+  console.log("================================================")
+  console.log(offer)
+  console.log("================================================")
+  ziga = offer;
+  res.sendStatus(200);
+});
+
+router.get('/api/renderlike/:id', function(req, res, next){
+  var id = req.params.id;
+  console.log("LOAD THIS " + id);
+  console.log(ziga)
   res.render('offer.hbs', {
-    offers: req.offers,
+    offers: ziga,
     users: users.users
   });
 });
 
+
+function getOfferById(id) {
+  //console.log(offers.offers[parseInt(id)-1], "ALL OFFERS");
+  var result;
+  offers.offers.forEach(function(offer, i) {
+    if (offer.offerID == id)
+    {
+      result = offer;
+    }
+  });
+  return result;
+}
 module.exports = router;
 

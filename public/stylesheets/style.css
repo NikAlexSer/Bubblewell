@@ -8,9 +8,6 @@ body {
   margin: 0 auto;
   padding: 18px 33px; }
 
-.popup {
-  display: none; }
-
 @font-face {
   font-family: 'LigatureSymbols';
   src: url("./fonts/LigatureSymbols-2.07.eot");
@@ -250,7 +247,10 @@ body {
       font-family: Arial;
       display: block;
       font-style: italic;
+      cursor: default;
       color: #a8a8a8; }
+  .comments-panel .comments {
+    display: none; }
   .comments-panel .comments-item {
     border-bottom: 1px solid #d7d7d7;
     font-size: 10pt;
@@ -275,3 +275,29 @@ body {
   .comments-panel .add-comment {
     height: 40px;
     display: none; }
+
+.popup-bg {
+  z-index: 100;
+  display: none;
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  position: fixed;
+  top: 0px; }
+
+.popup {
+  margin: 40px auto 0px auto;
+  width: 860px;
+  height: 1050px;
+  padding: 10px;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #000; }
+
+.popup-close {
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  cursor: pointer; }

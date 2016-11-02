@@ -127,12 +127,17 @@ $offerWidth: 220px;
       font-family: Arial;
       display: block;
       font-style: italic;
+      cursor: default;
       color: #a8a8a8;
     }
+  }
+  .comments {
+    display: none;
   }
   .comments-item {
     border-bottom: 1px solid #d7d7d7;
     font-size: 10pt;
+    
     font-family: Arial;
     height: 40px;
     padding: 5px 0 0 15px;

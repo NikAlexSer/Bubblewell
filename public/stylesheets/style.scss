@@ -8,10 +8,9 @@ body {
   margin: 0 auto;
   padding:18px 33px;
 }
-  .popup {
-    display: none;
-  }
+
 
 @import "offer-menu-bar.scss";
 @import "offers.scss";
 @import "offers-item.scss";
+@import "popup.scss";

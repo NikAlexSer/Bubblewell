@@ -48,6 +48,7 @@ var controller = (function() {
     $('.offers').on('click', '.btn-popup', function () {
       $('.popup-bg').toggle();
       _getPopup();
+
     });
   }
 

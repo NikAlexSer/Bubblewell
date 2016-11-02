@@ -30,7 +30,7 @@ router.get('/api/users', function(req, res, next){
  **/
 router.get('/api/render', function(req, res, next){
   console.log(users.users[1].firstName + ", Я твой отец!");
-  res.render('offer.hbs', {
+  res.render('offerAll.hbs', {
     offers: offers.offers,
     users: users.users
   });
@@ -40,40 +40,26 @@ router.get('/api/render', function(req, res, next){
  * Получение обновленных данных сервером
  **/
 
-var ziga;
+var offer;
 
 router.post('/api/like', function(req, res, next){
-  console.log(req.body.id, "TYT  BIL VIKTOR", req.body);
-  // LIKE ++ PO ID
-  var offer = getOfferById(req.body.id);
-  console.log("================================================")
-  console.log(offer)
-  console.log("================================================")
-  ziga = offer;
+  offer = JSON.parse(req.body.offers);
+  console.log("================================================");
+  console.log(offer);
+  console.log("================================================");
   res.sendStatus(200);
 });
 
-router.get('/api/renderlike/:id', function(req, res, next){
-  var id = req.params.id;
-  console.log("LOAD THIS " + id);
-  console.log(ziga)
+router.get('/api/renderoffer/', function(req, res, next){
   res.render('offer.hbs', {
-    offers: ziga,
+    offers: offer,
     users: users.users
   });
 });
 
+router.get('/api/popup/', function(req, res, next){
+  res.render('popup.hbs');
+});
 
-function getOfferById(id) {
-  //console.log(offers.offers[parseInt(id)-1], "ALL OFFERS");
-  var result;
-  offers.offers.forEach(function(offer, i) {
-    if (offer.offerID == id)
-    {
-      result = offer;
-    }
-  });
-  return result;
-}
 module.exports = router;
 

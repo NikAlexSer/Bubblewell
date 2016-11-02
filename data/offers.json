@@ -135,6 +135,7 @@
       "location": "Москва",
       "image": "https://pp.vk.me/c627119/v627119360/70819/HzuKaioKMeA.jpg",
       "authorID": "6",
+      "visible": true,
       "socialCounters": {
         "likeCounter": "22",
         "commentCounter": "3",
@@ -257,6 +258,216 @@
         },
         {
           "userID": "6",
+          "message": "WaTaFuck..."
+        }
+      ]
+    },
+    {
+      "offerID": "9",
+      "name": "Оформление интерьера",
+      "type": "Недвижимость",
+      "time": "Всегда актуально",
+      "location": "Москва",
+      "image": "http://cs6.pikabu.ru/images/big_size_comm/2015-01_1/14203017957828.jpg",
+      "authorID": "1",
+      "visible": true,
+      "socialCounters": {
+        "likeCounter": "22",
+        "commentCounter": "3",
+        "feedCounter": "3",
+        "addCounter": "5"
+      },
+      "already-liked": [
+        "1",
+        "2",
+        "3"
+      ],
+      "comments": [
+        {
+          "userID": "1",
+          "message": "В березовском можно в 3 раза дешевле взять"
+        },
+        {
+          "userID": "2",
+          "message": "Приезжай к нам в Голливуд, есть приличная квартирка"
+        },
+        {
+          "userID": "3",
+          "message": "WaTaFuck..."
+        }
+      ]
+    },
+    {
+      "offerID": "10",
+      "name": "Оформление интерьера",
+      "type": "Недвижимость",
+      "time": "Всегда актуально",
+      "location": "Москва",
+      "image": "http://cs6.pikabu.ru/images/big_size_comm/2015-01_1/14203017957828.jpg",
+      "authorID": "1",
+      "visible": true,
+      "socialCounters": {
+        "likeCounter": "22",
+        "commentCounter": "3",
+        "feedCounter": "3",
+        "addCounter": "5"
+      },
+      "already-liked": [
+        "1",
+        "2",
+        "3"
+      ],
+      "comments": [
+        {
+          "userID": "1",
+          "message": "В березовском можно в 3 раза дешевле взять"
+        },
+        {
+          "userID": "2",
+          "message": "Приезжай к нам в Голливуд, есть приличная квартирка"
+        },
+        {
+          "userID": "3",
+          "message": "WaTaFuck..."
+        }
+      ]
+    },
+    {
+      "offerID": "11",
+      "name": "Оформление интерьера",
+      "type": "Недвижимость",
+      "time": "Всегда актуально",
+      "location": "Москва",
+      "image": "http://cs6.pikabu.ru/images/big_size_comm/2015-01_1/14203017957828.jpg",
+      "authorID": "1",
+      "visible": true,
+      "socialCounters": {
+        "likeCounter": "22",
+        "commentCounter": "3",
+        "feedCounter": "3",
+        "addCounter": "5"
+      },
+      "already-liked": [
+        "1",
+        "2",
+        "3"
+      ],
+      "comments": [
+        {
+          "userID": "1",
+          "message": "В березовском можно в 3 раза дешевле взять"
+        },
+        {
+          "userID": "2",
+          "message": "Приезжай к нам в Голливуд, есть приличная квартирка"
+        },
+        {
+          "userID": "3",
+          "message": "WaTaFuck..."
+        }
+      ]
+    },
+    {
+      "offerID": "12",
+      "name": "Оформление интерьера",
+      "type": "Недвижимость",
+      "time": "Всегда актуально",
+      "location": "Москва",
+      "image": "http://cs6.pikabu.ru/images/big_size_comm/2015-01_1/14203017957828.jpg",
+      "authorID": "1",
+      "visible": true,
+      "socialCounters": {
+        "likeCounter": "22",
+        "commentCounter": "3",
+        "feedCounter": "3",
+        "addCounter": "5"
+      },
+      "already-liked": [
+        "1",
+        "2",
+        "3"
+      ],
+      "comments": [
+        {
+          "userID": "1",
+          "message": "В березовском можно в 3 раза дешевле взять"
+        },
+        {
+          "userID": "2",
+          "message": "Приезжай к нам в Голливуд, есть приличная квартирка"
+        },
+        {
+          "userID": "3",
+          "message": "WaTaFuck..."
+        }
+      ]
+    },
+    {
+      "offerID": "13",
+      "name": "Оформление интерьера",
+      "type": "Недвижимость",
+      "time": "Всегда актуально",
+      "location": "Москва",
+      "image": "http://cs6.pikabu.ru/images/big_size_comm/2015-01_1/14203017957828.jpg",
+      "authorID": "1",
+      "visible": true,
+      "socialCounters": {
+        "likeCounter": "22",
+        "commentCounter": "3",
+        "feedCounter": "3",
+        "addCounter": "5"
+      },
+      "already-liked": [
+        "1",
+        "2",
+        "3"
+      ],
+      "comments": [
+        {
+          "userID": "1",
+          "message": "В березовском можно в 3 раза дешевле взять"
+        },
+        {
+          "userID": "2",
+          "message": "Приезжай к нам в Голливуд, есть приличная квартирка"
+        },
+        {
+          "userID": "3",
+          "message": "WaTaFuck..."
+        }
+      ]
+    },
+    {
+      "offerID": "14",
+      "name": "Оформление интерьера",
+      "type": "Недвижимость",
+      "time": "Всегда актуально",
+      "location": "Москва",
+      "image": "http://cs6.pikabu.ru/images/big_size_comm/2015-01_1/14203017957828.jpg",
+      "authorID": "1",
+      "visible": true,
+      "socialCounters": {
+        "likeCounter": "22",
+        "commentCounter": "3",
+        "feedCounter": "3",
+        "addCounter": "5"
+      },
+      "already-liked": [
+        "1",
+        "2",
+        "3"
+      ],
+      "comments": [
+        {
+          "userID": "1",
+          "message": "В березовском можно в 3 раза дешевле взять"
+        },
+        {
+          "userID": "2",
+          "message": "Приезжай к нам в Голливуд, есть приличная квартирка"
+        },
+        {
+          "userID": "3",
           "message": "WaTaFuck..."
         }
       ]

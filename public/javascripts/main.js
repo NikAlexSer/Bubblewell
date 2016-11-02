@@ -23,7 +23,9 @@ var controller = (function() {
       }
     });
   }
-
+  function _getPopup() {
+    $('.popup').load('http://127.0.0.1:3000/api/popup/');
+  }
   function _init() {
     _getOffers();
     _getUsers();
@@ -31,38 +33,54 @@ var controller = (function() {
   _init();
 
   function _setEventsHandler() {
-    $('.offers').on('click', '.com', function () {
-      $(this).css({color: "#5574ad"}).parent().parent().parent().find('.add-comment').toggle();
+    _commentBtnClick();
+    _likeBtnClick();
+    _togglePopup();
+    _closePopup();
+  }
+
+  function _closePopup() {
+    $('.popup-bg').on('click', '.popup-close', function () {
+      $('.popup-bg').toggle();
     });
-    $('.offers').on('click', '.like', function () {
-      var lol = parseInt($(this).parent().parent().parent().attr('id')) - 1;
-      $(this).css({color: "#b13897"});
-      offers[lol].socialCounters.likeCounter = parseInt(offers[lol].socialCounters.likeCounter) + 1;
-      console.log(offers[lol]);
-      console.log(offers[lol].socialCounters.likeCounter);
-      _saveData($(this).parent().parent().parent().attr('id'))
+  }
+  function _togglePopup() {
+    $('.offers').on('click', '.btn-popup', function () {
+      $('.popup-bg').toggle();
+      _getPopup();
     });
   }
 
-  function _saveData(lol) {
-    console.log(JSON.stringify(offers),lol);
-  //   $.ajax({
-  //     type: 'POST',
-  //     url: "http://127.0.0.1:3000/api/save",
-  //     data: JSON.stringify(offers),
-  //     dataType: "JSON",
-  //     success: function () {
-  //       console.log('Ziga');
-  //     }
-  // });
-    
+  //Доработать выключение комментов
+  function _commentBtnClick() {
+    $('.offers').on('click', '.com', function () {
+      $('.comments').add('.add-comment').hide();
+      $(this).css({color: "#5574ad"})
+        .closest('.offer').find('.add-comment').toggle()
+        .closest('.offer').find('.comments').toggle();
+
+    });
+  }
+  function _likeBtnClick() {
+    $('.offers').on('click', '.like', function () {
+      var id = parseInt($(this).parent().parent().parent().data('number')) - 1;
+      $(this).css({color: "#b13897"});
+      offers[id].socialCounters.likeCounter = parseInt(offers[id].socialCounters.likeCounter) + 1;
+      console.log(offers[id]);
+      console.log(offers[id].socialCounters.likeCounter);
+      _saveData(id)
+    });
+  }
+
+  function _saveData(id) {
+    console.log(JSON.stringify(offers),id);
     $.post('http://127.0.0.1:3000/api/like/', {
-      id: lol
+      offers: JSON.stringify(offers[id])
     }, function(){
-      console.log("AZAZAAZAZAZAZ", lol);
-      $('.offers #'+lol).replaceWith().load('http://127.0.0.1:3000/api/renderlike/' + lol);
+      $('#offerID-'+(id+1)).load('http://127.0.0.1:3000/api/renderoffer/');
     })
   }
+
   return {
     render: function () {
       $('.offers').load('http://127.0.0.1:3000/api/render/');
@@ -72,7 +90,5 @@ var controller = (function() {
 }());
 
 $(function() {
-
   controller.render();
-
 });

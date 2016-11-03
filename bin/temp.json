@@ -7,22 +7,18 @@
     "location": "Тиват, Черногория",
     "image": "http://www.hqwallpapers.ru/wallpapers/nature/yahty-i-more.jpg",
     "authorID": "4",
-    "visible": true,
+    "visible": false,
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipexea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eufugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollitanim id est laborum.",
     "socialCounters": {
-      "likeCounter": 117,
+      "likeCounter": "34",
       "commentCounter": "",
       "feedCounter": "",
-      "addCounter": 35
+      "addCounter": "13"
     },
     "alreadyLiked": [
       "1",
       "2",
-      "3",
-      "7"
-    ],
-    "alreadyAdd": [
-      "7"
+      "3"
     ],
     "comments": [],
     "feeds": [
@@ -51,10 +47,8 @@
     "alreadyLiked": [
       "1",
       "2",
-      "3",
-      "7"
+      "3"
     ],
-    "alreadyAdd": [],
     "comments": [
       {
         "userID": "1",
@@ -92,7 +86,6 @@
       "feedCounter": "3",
       "addCounter": "5"
     },
-    "alreadyAdd": [],
     "alreadyLiked": [
       "1",
       "2",
@@ -130,19 +123,15 @@
     "visible": true,
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipexea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eufugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollitanim id est laborum.",
     "socialCounters": {
-      "likeCounter": 24,
+      "likeCounter": "22",
       "commentCounter": "3",
       "feedCounter": "3",
-      "addCounter": 6
+      "addCounter": "5"
     },
     "alreadyLiked": [
       "1",
       "2",
-      "3",
-      "7"
-    ],
-    "alreadyAdd": [
-      "7"
+      "3"
     ],
     "comments": [
       {
@@ -176,18 +165,16 @@
     "visible": true,
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipexea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eufugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollitanim id est laborum.",
     "socialCounters": {
-      "likeCounter": 25,
+      "likeCounter": "22",
       "commentCounter": "3",
       "feedCounter": "3",
-      "addCounter": 8
+      "addCounter": "5"
     },
     "alreadyLiked": [
       "1",
       "2",
-      "3",
-      "7"
+      "3"
     ],
-    "alreadyAdd": [],
     "comments": [],
     "feeds": [
       {
@@ -204,7 +191,7 @@
     "location": "Москва",
     "image": "http://cs6.pikabu.ru/images/big_size_comm/2015-01_1/14203017957828.jpg",
     "authorID": "1",
-    "visible": false,
+    "visible": true,
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipexea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eufugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollitanim id est laborum.",
     "socialCounters": {
       "likeCounter": "22",
@@ -217,7 +204,6 @@
       "2",
       "3"
     ],
-    "alreadyAdd": [],
     "comments": [
       {
         "userID": "1",
@@ -250,7 +236,7 @@
     "visible": true,
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipexea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eufugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollitanim id est laborum.",
     "socialCounters": {
-      "likeCounter": 23,
+      "likeCounter": "22",
       "commentCounter": "3",
       "feedCounter": "3",
       "addCounter": "5"
@@ -258,10 +244,8 @@
     "alreadyLiked": [
       "1",
       "2",
-      "3",
-      "7"
+      "3"
     ],
-    "alreadyAdd": [],
     "comments": [
       {
         "userID": "1",
@@ -285,7 +269,7 @@
   },
   {
     "offerID": "8",
-    "name": "Жили были три китайца",
+    "name": "Оформление интерьера",
     "type": "Недвижимость",
     "time": "Всегда актуально",
     "location": "Москва",
@@ -294,18 +278,16 @@
     "visible": true,
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipexea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eufugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollitanim id est laborum.",
     "socialCounters": {
-      "likeCounter": 27,
+      "likeCounter": "22",
       "commentCounter": "3",
       "feedCounter": "3",
-      "addCounter": 9
+      "addCounter": "5"
     },
     "alreadyLiked": [
       "1",
       "2",
-      "3",
-      "7"
+      "3"
     ],
-    "alreadyAdd": [],
     "comments": [
       {
         "userID": "1",
@@ -337,27 +319,25 @@
   },
   {
     "offerID": "9",
-    "name": "Вы не готовы!",
+    "name": "Оформление интерьера",
     "type": "Недвижимость",
     "time": "Всегда актуально",
     "location": "Москва",
-    "image": "http://habrastorage.org/storage2/176/fdd/ef7/176fddef7beb13250e35d1c110d1558b.jpg",
+    "image": "http://cs6.pikabu.ru/images/big_size_comm/2015-01_1/14203017957828.jpg",
     "authorID": "1",
     "visible": true,
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipexea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eufugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollitanim id est laborum.",
     "socialCounters": {
-      "likeCounter": 23,
+      "likeCounter": "22",
       "commentCounter": "3",
       "feedCounter": "3",
-      "addCounter": 11
+      "addCounter": "5"
     },
     "alreadyLiked": [
       "1",
       "2",
-      "3",
-      "7"
+      "3"
     ],
-    "alreadyAdd": [],
     "comments": [
       {
         "userID": "1",
@@ -385,9 +365,9 @@
     "type": "Недвижимость",
     "time": "Всегда актуально",
     "location": "Москва",
-    "image": "http://images.noob-club.ru/news/2014/08/ikq38se8u0.png",
+    "image": "http://cs6.pikabu.ru/images/big_size_comm/2015-01_1/14203017957828.jpg",
     "authorID": "1",
-    "visible": false,
+    "visible": true,
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipexea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eufugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollitanim id est laborum.",
     "socialCounters": {
       "likeCounter": "22",
@@ -400,7 +380,6 @@
       "2",
       "3"
     ],
-    "alreadyAdd": [],
     "comments": [
       {
         "userID": "1",
@@ -430,7 +409,7 @@
     "location": "Москва",
     "image": "http://cs6.pikabu.ru/images/big_size_comm/2015-01_1/14203017957828.jpg",
     "authorID": "1",
-    "visible": false,
+    "visible": true,
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipexea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eufugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollitanim id est laborum.",
     "socialCounters": {
       "likeCounter": "22",
@@ -443,7 +422,6 @@
       "2",
       "3"
     ],
-    "alreadyAdd": [],
     "comments": [
       {
         "userID": "1",
@@ -467,11 +445,12 @@
   },
   {
     "offerID": "12",
-    "name": "Оформление портала",
+    "name": "Оформление интерьера",
     "type": "Недвижимость",
     "time": "Всегда актуально",
-    "location": "Драенор",
-    "image": "https://i.ytimg.com/vi/o_accAVzhoE/maxresdefault.jpg",
+    "location": "Москва",
+    "image": "http://cs6.pikabu.ru/images/big_size_comm/2015-01_1/14203017957828.jpg",
+    "authorID": "1",
     "visible": true,
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipexea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eufugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollitanim id est laborum.",
     "socialCounters": {
@@ -483,10 +462,8 @@
     "alreadyLiked": [
       "1",
       "2",
-      "3",
-      "7"
+      "3"
     ],
-    "alreadyAdd": [],
     "comments": [
       {
         "userID": "1",
@@ -516,7 +493,7 @@
     "location": "Москва",
     "image": "http://cs6.pikabu.ru/images/big_size_comm/2015-01_1/14203017957828.jpg",
     "authorID": "1",
-    "visible": false,
+    "visible": true,
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipexea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eufugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollitanim id est laborum.",
     "socialCounters": {
       "likeCounter": "22",
@@ -529,7 +506,6 @@
       "2",
       "3"
     ],
-    "alreadyAdd": [],
     "comments": [
       {
         "userID": "1",
@@ -570,10 +546,8 @@
     "alreadyLiked": [
       "1",
       "2",
-      "3",
-      "7"
+      "3"
     ],
-    "alreadyAdd": [],
     "comments": [
       {
         "userID": "1",

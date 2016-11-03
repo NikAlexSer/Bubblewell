@@ -1,14 +1,12 @@
 body {
   width: 100%;
   margin: 0;
-  background-color: lightsteelblue;
 }
 .wrapper {
   width: 1010px - 36px;
   margin: 0 auto;
   padding:18px 33px;
 }
-
 
 @import "offer-menu-bar.scss";
 @import "offers.scss";

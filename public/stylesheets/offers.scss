@@ -1,13 +1,9 @@
 .offers {
-  padding-top: 20px;
-  padding-left: 3px;
+  padding: 20px 0 0 3px;
   background-color: #fcfcfc;
   width: 100%;
   height: 100%;
   column-count: 4;
-  -moz-column-gap: 1.5em;
-  -webkit-column-gap: 1.5em;
-  -moz-column-width: 220px;
-  -webkit-column-width: 220px;
+  column-width: 220px;
   column-gap: 1.5em;
 }

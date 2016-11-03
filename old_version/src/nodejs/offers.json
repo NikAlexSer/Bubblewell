@@ -14,7 +14,7 @@
         "feedCounter": "3",
         "addCounter": "5"
       },
-      "already-liked": ["1", "2", "3"],
+      "alreadyLiked": ["1", "2", "3"],
       "comments": [
         {
           "userID":"1",

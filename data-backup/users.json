@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "userID": "1",
+      "firstName": "Том",
+      "lastName": "Хэнкс",
+      "avatar": "http://7info.ru/userfiles/app_modules_news_models_news/tom_henks_1.jpg"
+    },
+    {
+      "userID": "2",
+      "firstName": "Люк",
+      "lastName": "Понебуходящий",
+      "avatar": "http://i.kinja-img.com/gawker-media/image/upload/s--vo7Lbmbx--/xeuu51ly5fsmsezju1ia.jpg"
+    },
+    {
+      "userID": "3",
+      "firstName": "Бильбо",
+      "lastName": "Бэгинс",
+      "avatar": "http://fanparty.ru/fanclubs/the-hobbit/articles/198167/218291_tribune_the_hobbit.jpg"
+    },
+    {
+      "userID": "4",
+      "firstName": "Джайна",
+      "lastName": "Праудмур",
+      "avatar": "https://i.ytimg.com/vi/7mKzMtNvceY/maxresdefault.jpg"
+    },
+    {
+      "userID": "5",
+      "firstName": "Император",
+      "lastName": "Человечества",
+      "avatar": "http://cs.pikabu.ru/post_img/2013/06/16/1/1371330706_1433645660.jpg"
+    },
+    {
+      "userID": "6",
+      "firstName": "Сидорович",
+      "lastName": "???",
+      "avatar": "http://vignette2.wikia.nocookie.net/modistalker/images/c/c8/%D0%A1%D0%B8%D0%B4%D0%BE%D1%80%D0%BE%D0%B2%D0%B8%D1%87.jpg/revision/latest?cb=20131222093325&path-prefix=ru"
+    },
+    {
+      "userID": "7",
+      "firstName": "Гарри",
+      "lastName": "Поттер",
+      "avatar": "http://vignette1.wikia.nocookie.net/harrypotter/images/4/4f/Harry_Potter_-_GoF_Promo.jpg/revision/latest?cb=20061109083433&path-prefix=ru"
+    }
+  ]
+}

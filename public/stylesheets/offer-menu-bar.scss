@@ -4,8 +4,6 @@
   src: url('./fonts/LigatureSymbols-2.07.eot?#iefix') format('embedded-opentype'),
   url('./fonts/LigatureSymbols-2.07.woff') format('woff'),
   url('./fonts/LigatureSymbols-2.07.ttf') format('truetype');
-  //font-weight: normal;
-  //font-style: normal;
 }
 
 .offer-menu-bar {
@@ -18,7 +16,7 @@
   background-color: white;
   border: 1px solid darkgrey;
   border-radius: 8px;
-  text-shadow: 0px 0px 0px #5574ad;
+  text-shadow: 0 0 0 #5574ad;
   font-family: "PF Agora Sans Pro XThin";
   font-size: 11pt;
   li {
@@ -34,7 +32,7 @@
 
 .filter {
   color: #5574AD;
-  text-shadow: 0px 0px 0px #5574ad;
+  text-shadow: 0 0 0 #5574ad;
   a {
     line-height: 25px;
     border-right: 1px dashed #e6e6e6;
@@ -92,7 +90,7 @@
     display: inline-block;
   }
   a {
-    text-shadow: 0px 0px 0px #5574ad;
+    text-shadow: 0 0 0 #5574ad;
     color: #5574ad;
     text-decoration: none;
     border-bottom: 1px dotted #5574ad;

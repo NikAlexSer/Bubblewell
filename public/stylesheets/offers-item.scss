@@ -45,6 +45,18 @@ $offerWidth: 220px;
         vertical-align: middle;
         cursor: pointer;
       }
+      .like:hover {
+        color: #9e2385;
+      }
+      .fav:hover {
+        color: #ff1107;
+      }
+      .com:hover {
+        color: #2b45ff;
+      }
+      .add:hover {
+        color: #ffdf10;
+      }
     }
   }
 }
@@ -145,8 +157,8 @@ $offerWidth: 220px;
     text-shadow: 0px 0px 0px black;
     .comment {
       float: left;
-      width: calc(100% - 41px);
-      margin-left: 10px;
+      width: calc(100% - 46px);
+      margin-left: 15px;
       line-height: initial;
       max-height: 18pt;
       overflow: hidden;

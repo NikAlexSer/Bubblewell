@@ -28,7 +28,6 @@ app.use(require('node-sass-middleware')({
 
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
-
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', api);
 

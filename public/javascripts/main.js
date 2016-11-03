@@ -12,7 +12,7 @@ var controller = (function() {
         console.log(users)
       }
     });
-  }
+  };
   function _getOffers() {
     $.ajax({
       dataType: 'json',
@@ -22,33 +22,37 @@ var controller = (function() {
         console.log(offers)
       }
     });
-  }
-  function _getPopup() {
+  };
+  function _getPopupTemplate() {
     $('.popup').load('http://127.0.0.1:3000/api/popup/');
-  }
+  };
+
   function _init() {
     _getOffers();
     _getUsers();
-  }
+  };
   _init();
+
 
   function _setEventsHandler() {
     _commentBtnClick();
     _likeBtnClick();
+    _addBtnClick()
     _togglePopup();
     _closePopup();
   }
 
   function _closePopup() {
     $('.popup-bg').on('click', '.popup-close', function () {
+      $('body').toggleClass('.scroll');
       $('.popup-bg').toggle();
     });
   }
   function _togglePopup() {
     $('.offers').on('click', '.btn-popup', function () {
       $('.popup-bg').toggle();
-      _getPopup();
-
+      $('body').toggleClass('scroll');
+      _getPopupTemplate();
     });
   }
 
@@ -59,7 +63,6 @@ var controller = (function() {
       $(this).css({color: "#5574ad"})
         .closest('.offer').find('.add-comment').toggle()
         .closest('.offer').find('.comments').toggle();
-
     });
   }
   function _likeBtnClick() {
@@ -72,10 +75,20 @@ var controller = (function() {
       _saveData(id)
     });
   }
+  function _addBtnClick() {
+    $('.offers').on('click', '.add', function () {
+      var id = parseInt($(this).parent().parent().parent().data('number')) - 1;
+      $(this).css({color: "#b13897"});
+      offers[id].socialCounters.addCounter = parseInt(offers[id].socialCounters.addCounter) + 1;
+      console.log(offers[id]);
+      console.log(offers[id].socialCounters.addCounter);
+      _saveData(id)
+    });
+  }
 
   function _saveData(id) {
     console.log(JSON.stringify(offers),id);
-    $.post('http://127.0.0.1:3000/api/like/', {
+    $.post('http://127.0.0.1:3000/api/save/', {
       offers: JSON.stringify(offers[id])
     }, function(){
       $('#offerID-'+(id+1)).load('http://127.0.0.1:3000/api/renderoffer/');

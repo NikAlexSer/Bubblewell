@@ -42,7 +42,7 @@ router.get('/api/render', function(req, res, next){
 
 var offer;
 
-router.post('/api/like', function(req, res, next){
+router.post('/api/save', function(req, res, next){
   offer = JSON.parse(req.body.offers);
   console.log("================================================");
   console.log(offer);

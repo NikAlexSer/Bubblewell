@@ -6,7 +6,7 @@
   background-color: rgba(0,0,0,0.5);
   overflow:hidden;
   position:fixed;
-  top:0px;
+  top: 0;
 }
 .popup {
   margin:40px auto 0px auto;
@@ -19,9 +19,110 @@
   box-shadow: 0px 0px 10px #000;
 }
 
+.popup .buttons{
+  margin-top: 78px;
+}
+
+.popup .left-column{
+  float: left;
+  width: calc(80% - 21px);
+  border-right: 1px solid lightgrey;
+  margin-bottom: -10px;
+  padding-right: 20px;
+}
+
+.popup .right-column{
+  float: left;
+  width: 20%;
+}
+
+.popup .right-column .buttons span{
+  display: block;
+  background: linear-gradient(#d4d4d4, #e8e8e8, #f1f1f1);
+  margin: 5px auto;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  max-width: 70%;
+  border: 1px solid lightgray;
+}
+
+.popup .right-column .buttons span:hover{
+  cursor: pointer;
+}
+
+
+.popup .gradient{
+  background-image: linear-gradient(0deg, rgba(198, 83, 165, .95) 0%, rgba(198, 86, 51, .95) 100%);
+  -webkit-mask-image: linear-gradient(0deg, transparent 0%, rgb(0, 0, 0) 100%);
+}
+
 .popup-close {
   position: absolute;
   right:10px;
-  top: 0px;
+  top: 5px;
   cursor: pointer;
+}
+
+.popup-close span{
+  font-family: monospace;
+  font-size: 18px;
+}
+
+.popup h3{
+  font-weight: bold;
+  font-size: 24px;
+  margin: 25px 0 0 0;
+}
+
+.popup .offer-type{
+  color: lightgrey;
+  display: inline-block;
+  margin-bottom: 7.5px;
+}
+
+.popup .avatar{
+  height: 50px;
+  width: 50px;
+}
+
+.popup .description{
+  margin-top: 5px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.row{
+  margin: -10px;
+  padding: 10px;
+}
+
+.with-border{
+  border-bottom: 1px solid lightgrey;
+}
+
+.row:after, .feed {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.popup .feeds{
+  width: 100%;
+  background: #d7d7d7;
+  margin-top: 10px;
+}
+
+.popup .feeds .avatar-wrapper {
+  width: 50px;
+  float: left;
+}
+
+.popup .feeds .text {
+  width: calc(100% - 50px);
+  float: left;
+}
+
+.scroll {
+  overflow: hidden;
 }

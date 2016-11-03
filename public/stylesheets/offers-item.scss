@@ -136,7 +136,7 @@ $offerWidth: 220px;
   }
   .comments-item {
     border-bottom: 1px solid #d7d7d7;
-    font-size: 10pt;
+    font-size: 8.5pt;
     
     font-family: Arial;
     height: 40px;
@@ -144,24 +144,40 @@ $offerWidth: 220px;
     line-height: 50%;
     text-shadow: 0px 0px 0px black;
     .comment {
-      padding-left: 12px;
-      line-height: 40px;
+      float: left;
+      width: calc(100% - 41px);
+      margin-left: 10px;
+      line-height: initial;
+      max-height: 18pt;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+    }
+  }
+  .comments-item {
+    .avatar {
+      float: left;
     }
   }
   .avatar {
     height: 25px;
     width: 25px;
-    border-radius: 50%;
-    border: 3px double lightgrey;
-    background-color: white;
-    vertical-align: middle;
-    img {
-      margin: auto;
-      max-height: 25px;
-    }
   }
   .add-comment {
     height: 40px;
     display: none;
+  }
+}
+
+.avatar{
+  border-radius: 50%;
+  border: 3px double lightgrey;
+  background-color: white;
+  overflow: hidden;
+  vertical-align: middle;
+  img {
+    margin: auto;
+    width: 100%;
   }
 }

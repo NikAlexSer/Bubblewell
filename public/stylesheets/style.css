@@ -32,98 +32,95 @@ body {
     width: inherit;
     display: block;
     cursor: pointer; }
-
-.filter {
-  color: #5574AD;
-  text-shadow: 0 0 0 #5574ad; }
-  .filter a {
-    line-height: 25px;
-    border-right: 1px dashed #e6e6e6;
-    text-align: center; }
-    .filter a:first-child {
-      padding-right: 5px; }
-  .filter:first-child {
-    width: 30px;
-    padding: 0 9px 0 18px; }
-  .filter:last-child {
-    width: 70px;
-    padding: 0 10px 0 10px; }
-
-.category {
-  height: 25px;
-  width: 80px;
-  padding-left: 15px;
-  vertical-align: middle; }
-  .category p {
-    display: block;
-    position: absolute;
-    right: 10px;
-    top: -8px;
-    font-family: 'LigatureSymbols'; }
-  .category a {
-    position: relative;
-    display: block;
-    color: white;
-    text-decoration: none;
-    vertical-align: middle;
-    height: inherit;
-    padding: 5px 10px 0 10px;
-    border-radius: 5px;
-    background: -webkit-linear-gradient(#dd3c9d, #9e2385);
-    background: linear-gradient(#dd3c9d, #9e2385);
-    -webkit-transition: 0.2s;
-    transition: 0.2s; }
-    .category a:hover {
-      background: -webkit-linear-gradient(#9e2385, #dd3c9d);
-      background: linear-gradient(#9e2385, #dd3c9d); }
-    .category a:active {
-      background: -webkit-linear-gradient(#ca339b, #9e2385);
-      background: linear-gradient(#ca339b, #9e2385); }
-
-.message {
-  font-size: 14pt;
-  padding-left: 35px; }
-  .message a, .message span {
-    display: inline-block; }
-  .message a {
-    text-shadow: 0 0 0 #5574ad;
-    color: #5574ad;
-    text-decoration: none;
-    border-bottom: 1px dotted #5574ad;
-    line-height: 11pt; }
-
-.search div {
-  position: relative;
-  color: #b8b8b8;
-  border: 1px solid #b8b8b8;
-  border-radius: 6px;
-  height: 25px;
-  margin: 0 15px 0 0;
-  min-height: 20px; }
-  .search div .search-field {
-    font-style: italic;
-    position: relative;
-    top: -6px;
-    left: 5px;
-    width: 195px;
-    border: none;
-    outline: none;
-    -webkit-appearance: none;
-    vertical-align: middle; }
-  .search div .search-btn {
-    border-right: 1px dotted #b8b8b8;
-    margin-right: -5px;
-    cursor: pointer;
-    width: 25px;
+  .offer-menu-bar .filter {
+    color: #5574AD;
+    text-shadow: 0 0 0 #5574ad; }
+    .offer-menu-bar .filter a {
+      line-height: 25px;
+      border-right: 1px dashed #e6e6e6;
+      text-align: center; }
+      .offer-menu-bar .filter a:first-child {
+        padding-right: 5px; }
+    .offer-menu-bar .filter:first-child {
+      width: 30px;
+      padding: 0 9px 0 18px; }
+    .offer-menu-bar .filter:last-child {
+      width: 70px;
+      padding: 0 10px 0 10px; }
+  .offer-menu-bar .category {
     height: 25px;
-    display: inline-block;
-    -webkit-transform: rotate3d(0, 1, 0, 180deg);
-            transform: rotate3d(0, 1, 0, 180deg);
-    font-size: 20pt;
-    font-family: 'LigatureSymbols'; }
+    width: 80px;
+    padding-left: 15px;
+    vertical-align: middle; }
+    .offer-menu-bar .category p {
+      display: block;
+      position: absolute;
+      right: 10px;
+      top: -8px;
+      font-family: LigatureSymbols; }
+    .offer-menu-bar .category a {
+      position: relative;
+      display: block;
+      color: white;
+      text-decoration: none;
+      vertical-align: middle;
+      height: inherit;
+      padding: 5px 10px 0 10px;
+      border-radius: 5px;
+      background: -webkit-linear-gradient(#dd3c9d, #9e2385);
+      background: linear-gradient(#dd3c9d, #9e2385);
+      -webkit-transition: 0.2s;
+      transition: 0.2s; }
+      .offer-menu-bar .category a:hover {
+        background: -webkit-linear-gradient(#9e2385, #dd3c9d);
+        background: linear-gradient(#9e2385, #dd3c9d); }
+      .offer-menu-bar .category a:active {
+        background: -webkit-linear-gradient(#ca339b, #9e2385);
+        background: linear-gradient(#ca339b, #9e2385); }
+  .offer-menu-bar .message {
+    font-size: 14pt;
+    padding-left: 35px; }
+    .offer-menu-bar .message a, .offer-menu-bar .message span {
+      display: inline-block; }
+    .offer-menu-bar .message a {
+      text-shadow: 0 0 0 #5574ad;
+      color: #5574ad;
+      text-decoration: none;
+      border-bottom: 1px dotted #5574ad;
+      line-height: 11pt; }
+  .offer-menu-bar .search div {
+    position: relative;
+    color: #b8b8b8;
+    border: 1px solid #b8b8b8;
+    border-radius: 6px;
+    height: 25px;
+    margin: 0 15px 0 0;
+    min-height: 20px; }
+    .offer-menu-bar .search div .search-field {
+      font-style: italic;
+      position: relative;
+      top: -6px;
+      left: 5px;
+      width: 195px;
+      border: none;
+      outline: none;
+      -webkit-appearance: none;
+      vertical-align: middle; }
+    .offer-menu-bar .search div .search-btn {
+      border-right: 1px dotted #b8b8b8;
+      margin-right: -5px;
+      cursor: pointer;
+      width: 25px;
+      height: 25px;
+      display: inline-block;
+      -webkit-transform: rotate3d(0, 1, 0, 180deg);
+              transform: rotate3d(0, 1, 0, 180deg);
+      font-size: 20pt;
+      font-family: LigatureSymbols; }
 
 .offers {
-  padding: 20px 0 0 3px;
+  padding: 20px 0 0 5px;
+  margin: auto;
   background-color: #fcfcfc;
   width: 100%;
   height: 100%;
@@ -133,9 +130,9 @@ body {
   -webkit-column-width: 220px;
      -moz-column-width: 220px;
           column-width: 220px;
-  -webkit-column-gap: 1.5em;
-     -moz-column-gap: 1.5em;
-          column-gap: 1.5em; }
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px; }
 
 .offer {
   position: relative;
@@ -144,8 +141,6 @@ body {
   border: 1px solid #ebebeb;
   margin: 0 0 1.5em;
   box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.18);
   border-radius: 10px;
   vertical-align: baseline;
@@ -261,6 +256,7 @@ body {
   .comments-panel .comments-item {
     border-bottom: 1px solid #d7d7d7;
     font-size: 8.5pt;
+    position: relative;
     font-family: Arial;
     height: 40px;
     padding: 5px 0 0 15px;
@@ -282,6 +278,8 @@ body {
   .comments-panel .add-comment {
     height: 40px;
     display: none; }
+    .comments-panel .add-comment input {
+      width: 150px; }
 
 .avatar {
   border-radius: 50%;
@@ -301,6 +299,13 @@ body {
 
 .offer-active .add-comment, .offer-active .comments {
   display: block !important; }
+
+.delete {
+  display: none;
+  position: absolute;
+  right: 5px;
+  cursor: pointer;
+  top: 40%; }
 
 .popup-bg {
   z-index: 100;

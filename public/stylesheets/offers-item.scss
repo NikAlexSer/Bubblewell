@@ -1,4 +1,5 @@
 $offerWidth: 220px;
+$iconFont: LigatureSymbols;
 
 .offer {
   position: relative;
@@ -7,8 +8,6 @@ $offerWidth: 220px;
   border: 1px solid #ebebeb;
   margin: 0 0 1.5em;
   box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.18);
   border-radius: 10px;
   vertical-align: baseline;
@@ -35,7 +34,7 @@ $offerWidth: 220px;
       position: absolute;
       top: -20px;
       z-index: 50;
-      font-family: LigatureSymbols;
+      font-family: $iconFont;
       color: #b7b7b7;
       font-size: 30pt;
       list-style: none;
@@ -150,7 +149,7 @@ $offerWidth: 220px;
   .comments-item {
     border-bottom: 1px solid #d7d7d7;
     font-size: 8.5pt;
-
+    position: relative;
     font-family: Arial;
     height: 40px;
     padding: 5px 0 0 15px;
@@ -178,6 +177,9 @@ $offerWidth: 220px;
   .add-comment {
     height: 40px;
     display: none;
+    input {
+      width: 150px;
+    }
   }
 }
 
@@ -205,4 +207,12 @@ $offerWidth: 220px;
   .add-comment, .comments {
     display: block !important;
   }
+}
+
+.delete {
+  display: none;
+  position: absolute;
+  right: 5px;
+  cursor: pointer;
+  top: 40%;
 }

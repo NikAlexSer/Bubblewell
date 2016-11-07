@@ -131,6 +131,12 @@ var controller = (function() {
         _getPopupTemplate(id);
       });
     }
+    function _commentHover() {
+      $('.offers').on('click', '.comments-item', function () {
+        console.log('lol');
+        $('.delete', this).toggle()
+      })
+    }
     _commentBtnClick();
     _likeBtnClick();
     _addBtnClick();
@@ -139,6 +145,7 @@ var controller = (function() {
     _delBtnClick();
     _newComment();
     _newFeed();
+    _commentHover();
   }
 
   function _socialCheck(id) {

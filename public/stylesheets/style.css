@@ -295,6 +295,15 @@ body {
     margin: auto;
     width: 100%; }
 
+.like-active {
+  color: #b13897; }
+
+.add-active {
+  color: #613a9f; }
+
+.offer-active .add-comment, .offer-active .comments {
+  display: block !important; }
+
 .popup-bg {
   z-index: 100;
   display: none;

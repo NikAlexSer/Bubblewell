@@ -2,24 +2,16 @@ var controller = (function() {
   var
       users,
       offers,
-      activeUser = '7';
+      activeUser = '6';
 
   function _getUsers() {
-    $.ajax({
-      dataType: 'json',
-      url: 'http://127.0.0.1:3000/api/users',
-      success: function(jsondata){
-        users = jsondata.users;
-      }
+    $.getJSON('http://127.0.0.1:3000/api/users', function(data){
+      users = data.users;
     });
   };
   function _getOffers() {
-    $.ajax({
-      dataType: 'json',
-      url: 'http://127.0.0.1:3000/api/offers',
-      success: function(jsondata){
-        offers = jsondata;
-      }
+    $.getJSON('http://127.0.0.1:3000/api/offers', function(data){
+      offers = data;
     });
   };
   function _getPopupTemplate(id) {
@@ -36,15 +28,8 @@ var controller = (function() {
   };
   _init();
 
-  function _setEventsHandler() {
-    function _commentBtnClick() {
-      $('.offers').on('click', '.com', function () {
-        $('.comments').add('.add-comment').hide();
-        $(this).css({color: "#5574ad"})
-          .closest('.offer').find('.add-comment').toggle()
-          .closest('.offer').find('.comments').toggle();
-      });
-    }
+  function _setEventsHandlers() {
+    /** not working yet =( **/
     function socialCountersCheck(arr, id, dest) {
       if (arr.indexOf(activeUser, 0) === -1){
         console.log(dest);
@@ -56,51 +41,58 @@ var controller = (function() {
         return true
       }
     }
+
+    function _commentBtnClick() {
+      $('.offers').on('click', '.com', function () {
+        $('.comments').add('.add-comment').hide();
+        $(this).css({color: "#5574ad"})
+          .closest('.offer').toggleClass('offer-active')
+      });
+    }
+    function _newComment() {
+      $('.offers').on('focus', '.add-comment input', function () {
+        var id = parseInt($(this).closest('.offer').data('number'));
+        $(this).keypress(function (eventObject) {
+          if ($(this).val()) {
+            if (eventObject.which === 13) {
+              offers[id].comments.unshift(
+                {
+                  userID: activeUser,
+                  message: $(this).val()
+                }
+              );
+              _saveData(id);
+            }
+          }
+        })
+      });
+    }
     function _likeBtnClick() {
       $('.offers').on('click', '.like', function () {
-        var id = parseInt($(this).closest('.offer').data('number')) - 1;
+        var id = parseInt($(this).closest('.offer').data('number'));
         $(this).css({color: "#b13897"});
-        socialCountersCheck(offers[id].alreadyLiked, id, offers[id].socialCounters.likeCounter);
-        /*
-        if (offers[id].alreadyLiked.indexOf(activeUser, 0) === -1){
+        //socialCountersCheck(offers[id].alreadyLiked, id, offers[id].socialCounters.likeCounter);
+        if (offers[id].alreadyLiked.indexOf(activeUser, 0) === -1) {
           offers[id].socialCounters.likeCounter = parseInt(offers[id].socialCounters.likeCounter) + 1;
-          console.log(offers[id].alreadyLiked.indexOf(activeUser, 0));
           offers[id].alreadyLiked.push(activeUser);
           _saveData(id)
         }
-        else if (offers[id].alreadyLiked.indexOf(activeUser, 0)) {
-          console.log(offers[id].alreadyLiked.indexOf(activeUser, 0));
-          return true;
-        }
-        else {
-          return true
-        }
-*/
       });
     }
     function _addBtnClick() {
       $('.offers').on('click', '.add', function () {
-        var id = parseInt($(this).closest('.offer').data('number')) - 1;
+        var id = parseInt($(this).closest('.offer').data('number'));
         $(this).css({color: "#613a9f"});
         if (offers[id].alreadyAdd.indexOf(activeUser, 0) === -1){
           offers[id].socialCounters.addCounter = parseInt(offers[id].socialCounters.addCounter) + 1;
-          console.log(offers[id].alreadyAdd.indexOf(activeUser, 0));
           offers[id].alreadyAdd.push(activeUser);
           _saveData(id)
         }
-        else if (offers[id].alreadyAdd.indexOf(activeUser, 0)) {
-          console.log(offers[id].alreadyAdd.indexOf(activeUser, 0));
-          return true;
-        }
-        else {
-          return true
-        }
-        _saveData(id)
       });
     }
     function _delBtnClick() {
       $('.offers').on('click', '.fav', function () {
-        var id = parseInt($(this).closest('.offer').data('number')) - 1;
+        var id = parseInt($(this).closest('.offer').data('number'));
         $(this).css({color: "#113a9f"}).closest('.offer').hide();
         offers[id].visible = false;
         _saveData(id)
@@ -114,7 +106,7 @@ var controller = (function() {
     }
     function _togglePopup() {
       $('.offers').on('click', '.btn-popup', function () {
-        var id = parseInt($(this).closest('.offer').data('number')) - 1;
+        var id = parseInt($(this).closest('.offer').data('number'));
         $('.popup-bg').toggle();
         $('body').toggleClass('scroll');
         _getPopupTemplate(id);
@@ -126,21 +118,41 @@ var controller = (function() {
     _togglePopup();
     _closePopup();
     _delBtnClick();
+    _newComment();
   }
 
+
+  function _socialCheck(id) {
+      if ((offers[id].alreadyAdd.indexOf(activeUser, 0) !== -1)) {
+        $('#offerID-'+ id + ' .add').addClass('add-active');
+      }
+      if ((offers[id].alreadyLiked.indexOf(activeUser, 0) !== -1)) {
+        $('#offerID-'+ id + ' .like').addClass('like-active')
+      }
+  }
   function _saveData(id) {
     $.post('http://127.0.0.1:3000/api/save/', {
       offer: JSON.stringify(offers[id]),
       offers: JSON.stringify(offers)
     }, function(){
-      $('#offerID-'+(id+1)).load('http://127.0.0.1:3000/api/renderoffer/');
+      $('#offerID-'+(id)).load('http://127.0.0.1:3000/api/renderoffer/', function () {
+        $(this).find('.add-comment .avatar').attr('src', users[parseInt(activeUser)].avatar);
+        _socialCheck(id);
+      });
     })
   }
 
+
   return {
     render: function () {
-      $('.offers').load('http://127.0.0.1:3000/api/render/');
-      _setEventsHandler();
+      $('.offers').load('http://127.0.0.1:3000/api/render/', function () {
+        $('.offer').each(function () {
+          var id = parseInt($(this).data('number'));
+          $(this).find('.add-comment .avatar').attr('src', users[parseInt(activeUser)].avatar);
+          _socialCheck(id)
+        });
+      });
+      _setEventsHandlers();
     }
   };
 }());

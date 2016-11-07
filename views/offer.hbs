@@ -48,6 +48,7 @@
             <div class="comments">
                 {{#each comments as |comment-lol|}}
                     {{#if this}}
+                        {{#compare @index '<' 5}}
                         <div class="comments-item">
                             {{#each ../../users as |users-com|}}
                                 {{#compare comment-lol.userID "==" users-com.userID}}
@@ -56,6 +57,7 @@
                             {{/each}}
                             <span class="comment">{{message}}</span>
                         </div>
+                        {{/compare}}
                     {{/if}}
                 {{/each}}
             </div>

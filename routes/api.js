@@ -36,7 +36,6 @@ router.get('/api/render', function(req, res, next){
     offers: offers,
     users: users.users
   });
-  console.log(offers)
 });
 
 /**

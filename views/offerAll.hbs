@@ -49,14 +49,16 @@
                 <div class="comments">
                     {{#each glob-offers.comments as |comment-lol|}}
                         {{#if this}}
-                            <div class="comments-item">
-                                {{#each ../../users as |users-com|}}
-                                    {{#compare comment-lol.userID "==" users-com.userID}}
-                                        <img src="{{users-com.avatar}}" class="avatar">
-                                    {{/compare}}
-                                {{/each}}
-                                <span class="comment">{{message}}</span>
-                            </div>
+                            {{#compare @index '<' 5}}
+                                <div class="comments-item">
+                                    {{#each ../../users as |users-com|}}
+                                        {{#compare comment-lol.userID "==" users-com.userID}}
+                                            <img src="{{users-com.avatar}}" class="avatar">
+                                        {{/compare}}
+                                    {{/each}}
+                                    <span class="comment">{{message}}</span>
+                                </div>
+                            {{/compare}}
                         {{/if}}
                     {{/each}}
                 </div>

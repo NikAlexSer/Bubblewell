@@ -193,3 +193,17 @@ $offerWidth: 220px;
     width: 100%;
   }
 }
+
+
+.like-active {
+  color: #b13897;
+}
+.add-active {
+  color: #613a9f;
+}
+
+.offer-active {
+  .add-comment, .comments {
+    display: block !important;
+  }
+}

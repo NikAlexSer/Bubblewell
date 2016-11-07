@@ -25,7 +25,6 @@ app.use(require('node-sass-middleware')({
   sourceMap: true
 }));
 
-
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 app.use(express.static(path.join(__dirname, 'public')));
@@ -37,10 +36,6 @@ app.use(function(req, res, next) {
   err.status = 404;
   next(err);
 });
-
-
-
-
 
 // dev error handler
 if (app.get('env') === 'development') {

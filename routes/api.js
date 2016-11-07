@@ -38,10 +38,10 @@ router.get('/api/render', function(req, res, next){
   });
 });
 
-/**
- * Получение обновленных данных сервером
- **/
 
+/**
+ * Получение обновленных данных сервером и последующая отправка шаблона на клиент
+ **/
 var offer;
 router.post('/api/save', function(req, res, next){
   offer = JSON.parse(req.body.offer);
@@ -57,11 +57,16 @@ router.get('/api/renderoffer/', function(req, res, next){
   });
 });
 
+
+/**
+ * Получение шаблона попапа по id и отправка его на клиент
+ */
 var popup;
 router.post('/api/popup/', function(req, res, next){
   popup = JSON.parse(req.body.offers);
   res.sendStatus(200);
 });
+
 router.get('/api/renderpopup/', function(req, res, next){
   res.render('popup.hbs', {
     offers: popup,

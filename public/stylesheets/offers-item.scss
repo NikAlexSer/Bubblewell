@@ -60,22 +60,23 @@ $offerWidth: 220px;
     }
   }
 }
+
 .offer:hover {
   border: 1px solid #abc9e8;
-  box-shadow: 2px -2px rgba(240,240,240, 100%);
+  box-shadow: 2px -2px rgba(240, 240, 240, 100%);
   .hover {
     display: block;
   }
 }
 
-
-.offer .image{
+.offer .image {
   position: relative;
-  margin:auto;
+  margin: auto;
   min-height: 40px;
   width: 100%;
   display: block;
 }
+
 .image div {
   width: 220px;
 }
@@ -149,7 +150,7 @@ $offerWidth: 220px;
   .comments-item {
     border-bottom: 1px solid #d7d7d7;
     font-size: 8.5pt;
-    
+
     font-family: Arial;
     height: 40px;
     padding: 5px 0 0 15px;
@@ -163,8 +164,6 @@ $offerWidth: 220px;
       max-height: 18pt;
       overflow: hidden;
       text-overflow: ellipsis;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
     }
   }
   .comments-item {
@@ -182,7 +181,7 @@ $offerWidth: 220px;
   }
 }
 
-.avatar{
+.avatar {
   border-radius: 50%;
   border: 3px double lightgrey;
   background-color: white;
@@ -194,10 +193,10 @@ $offerWidth: 220px;
   }
 }
 
-
 .like-active {
   color: #b13897;
 }
+
 .add-active {
   color: #613a9f;
 }

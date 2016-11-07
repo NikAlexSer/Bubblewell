@@ -273,9 +273,7 @@ body {
       line-height: initial;
       max-height: 18pt;
       overflow: hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      -webkit-line-clamp: 2; }
+      text-overflow: ellipsis; }
   .comments-panel .comments-item .avatar {
     float: left; }
   .comments-panel .avatar {
@@ -323,6 +321,66 @@ body {
   background-color: #ffffff;
   border-radius: 5px;
   box-shadow: 0px 0px 10px #000; }
+  .popup .left-column {
+    float: left;
+    width: 65%;
+    border-right: 1px solid lightgrey;
+    margin-bottom: -10px;
+    padding-right: 20px;
+    padding-left: 40px; }
+  .popup .right-column {
+    float: right;
+    width: 30%; }
+    .popup .right-column .buttons {
+      margin-top: 78px; }
+      .popup .right-column .buttons span {
+        display: block;
+        background: -webkit-linear-gradient(#d4d4d4, #e8e8e8, #f1f1f1);
+        background: linear-gradient(#d4d4d4, #e8e8e8, #f1f1f1);
+        margin: 5px auto;
+        text-align: center;
+        border-radius: 5px;
+        padding: 5px;
+        max-width: 70%;
+        cursor: pointer;
+        border: 1px solid lightgray; }
+  .popup .gradient {
+    background-image: -webkit-linear-gradient(bottom, rgba(198, 83, 165, 0.95) 0%, rgba(198, 86, 51, 0.95) 100%);
+    background-image: linear-gradient(0deg, rgba(198, 83, 165, 0.95) 0%, rgba(198, 86, 51, 0.95) 100%);
+    -webkit-mask-image: -webkit-linear-gradient(bottom, transparent 0%, black 100%);
+            mask-image: linear-gradient(0deg, transparent 0%, black 100%); }
+  .popup h3 {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 25px 0 0 0; }
+  .popup .offer-type {
+    color: lightgrey;
+    display: inline-block;
+    margin-bottom: 7.5px; }
+  .popup .avatar {
+    height: 50px;
+    width: 50px; }
+  .popup .description {
+    margin-top: 5px;
+    font-weight: bold;
+    margin-bottom: 10px; }
+  .popup .feeds {
+    width: 100%;
+    background: #d7d7d7;
+    margin-top: 10px; }
+    .popup .feeds .feed {
+      content: "";
+      display: table;
+      clear: both; }
+    .popup .feeds .avatar-wrapper {
+      width: 50px;
+      float: left; }
+    .popup .feeds .text {
+      width: calc(100% - 50px);
+      float: left; }
+  .popup .add-feed textarea {
+    width: 645px;
+    height: 55px; }
 
 .clearfix:after {
   overflow: auto;
@@ -330,69 +388,14 @@ body {
   display: table;
   clear: both; }
 
-.popup .buttons {
-  margin-top: 78px; }
-
-.popup .left-column {
-  float: left;
-  width: 65%;
-  border-right: 1px solid lightgrey;
-  margin-bottom: -10px;
-  padding-right: 20px;
-  padding-left: 40px; }
-
-.popup .right-column {
-  float: right;
-  width: 30%; }
-
-.popup .right-column .buttons span {
-  display: block;
-  background: -webkit-linear-gradient(#d4d4d4, #e8e8e8, #f1f1f1);
-  background: linear-gradient(#d4d4d4, #e8e8e8, #f1f1f1);
-  margin: 5px auto;
-  text-align: center;
-  border-radius: 5px;
-  padding: 5px;
-  max-width: 70%;
-  border: 1px solid lightgray; }
-
-.popup .right-column .buttons span:hover {
-  cursor: pointer; }
-
-.popup .gradient {
-  background-image: -webkit-linear-gradient(bottom, rgba(198, 83, 165, 0.95) 0%, rgba(198, 86, 51, 0.95) 100%);
-  background-image: linear-gradient(0deg, rgba(198, 83, 165, 0.95) 0%, rgba(198, 86, 51, 0.95) 100%);
-  -webkit-mask-image: -webkit-linear-gradient(bottom, transparent 0%, black 100%);
-          mask-image: linear-gradient(0deg, transparent 0%, black 100%); }
-
 .popup-close {
   position: absolute;
   right: 10px;
   top: 5px;
   cursor: pointer; }
-
-.popup-close span {
-  font-family: monospace;
-  font-size: 18px; }
-
-.popup h3 {
-  font-weight: bold;
-  font-size: 24px;
-  margin: 25px 0 0 0; }
-
-.popup .offer-type {
-  color: lightgrey;
-  display: inline-block;
-  margin-bottom: 7.5px; }
-
-.popup .avatar {
-  height: 50px;
-  width: 50px; }
-
-.popup .description {
-  margin-top: 5px;
-  font-weight: bold;
-  margin-bottom: 10px; }
+  .popup-close span {
+    font-family: monospace;
+    font-size: 18px; }
 
 .row {
   margin: -10px;
@@ -405,19 +408,6 @@ body {
   content: "";
   display: table;
   clear: both; }
-
-.popup .feeds {
-  width: 100%;
-  background: #d7d7d7;
-  margin-top: 10px; }
-
-.popup .feeds .avatar-wrapper {
-  width: 50px;
-  float: left; }
-
-.popup .feeds .text {
-  width: calc(100% - 50px);
-  float: left; }
 
 .scroll {
   overflow: hidden; }

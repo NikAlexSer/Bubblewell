@@ -1,5 +1,5 @@
 {{#with offers}}
-    <div class="popup-content">
+    <div class="popup-content" data-number="{{offerID}}">
         <span class="popup-close">Закрыть <span>x</span></span>
 
         <div class="row with-border">
@@ -29,18 +29,25 @@
         <div class="feeds row">
             {{#each feeds as |feed|}}
                 {{#if this}}
-                    <div class="feed">
-                        {{#each ../../users as |users-feed|}}
-                            {{#compare feed.userID "==" users-feed.userID}}
-                                <div class="avatar-wrapper">
-                                    <img src="{{users-feed.avatar}}" class="avatar">
-                                </div>
-                            {{/compare}}
-                        {{/each}}
-                        <div class="text">{{message}}</div>
-                    </div>
+                    {{#compare @index '<' 3}}
+                        {{#if feed.visible}}
+                            <div class="feed">
+                                {{#each ../../users as |users-feed|}}
+                                    {{#compare feed.userID "==" users-feed.userID}}
+                                        <div class="avatar-wrapper">
+                                            <img src="{{users-feed.avatar}}" class="avatar">
+                                        </div>
+                                    {{/compare}}
+                                {{/each}}
+                                <div class="text">{{message}}</div>
+                            </div>
+                        {{/if}}
+                    {{/compare}}
                 {{/if}}
             {{/each}}
+            <div class="add-feed">
+                <textarea maxlength="500"></textarea>
+            </div>
         </div>
     </div>
     </div>

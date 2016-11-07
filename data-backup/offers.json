@@ -1,586 +1,828 @@
-{
-  "offers": [
-    {
-      "offerID": "1",
-      "name": "Отпуск с семьей на море",
-      "type": "Путешествия",
-      "time": "12.06.12 - 14.06.12",
-      "location": "Тиват, Черногория",
-      "image": "http://www.hqwallpapers.ru/wallpapers/nature/yahty-i-more.jpg",
-      "authorID": "4",
-      "visible": true,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipexea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eufugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollitanim id est laborum.",
-      "socialCounters": {
-        "likeCounter": "34",
-        "commentCounter": "",
-        "feedCounter": "",
-        "addCounter": "13"
-      },
-      "alreadyLiked": [
-        "1",
-        "2",
-        "3"
-      ],
-      "comments": [],
-      "feeds": [
-        {
-          "userID": "1",
-          "message": "ащрукцщна8уцкна8уцн"
-        }
-      ]
+[
+  {
+    "offerID": "0",
+    "name": "Отпуск с семьей на море",
+    "type": "Путешествия",
+    "time": "12.06.12 - 14.06.12",
+    "location": "Тиват, Черногория",
+    "image": "http://www.hqwallpapers.ru/wallpapers/nature/yahty-i-more.jpg",
+    "authorID": "4",
+    "visible": true,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipexea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eufugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollitanim id est laborum.",
+    "socialCounters": {
+      "likeCounter": 119,
+      "commentCounter": "",
+      "feedCounter": "",
+      "addCounter": 37
     },
-    {
-      "offerID": "2",
-      "name": "Оформление интерьера",
-      "type": "Недвижимость",
-      "time": "Всегда актуально",
-      "location": "Москва",
-      "image": "http://s.pikabu.ru/post_img/2013/07/29/6/1375081510_1669157263.jpg",
-      "authorID": "1",
-      "visible": true,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipexea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eufugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollitanim id est laborum.",
-      "socialCounters": {
-        "likeCounter": "22",
-        "commentCounter": "3",
-        "feedCounter": "3",
-        "addCounter": "5"
+    "alreadyLiked": [
+      "1",
+      "2",
+      "3",
+      "7",
+      "6"
+    ],
+    "alreadyAdd": [
+      "7",
+      "6"
+    ],
+    "comments": [
+      {
+        "userID": "6",
+        "message": "Die Die Die!",
+        "visible": true
       },
-      "alreadyLiked": [
-        "1",
-        "2",
-        "3"
-      ],
-      "comments": [
-        {
-          "userID": "1",
-          "message": "В березовском можно в 3 раза дешевле взять"
-        },
-        {
-          "userID": "2",
-          "message": "Приезжай к нам в Голливуд, есть пfefsae asdfsdaf dasfdsafриличная квартирка"
-        },
-        {
-          "userID": "3",
-          "message": "WaTaFuck..."
-        }
-      ],
-      "feeds": [
-        {
-          "userID": "1",
-          "message": "ащрукцщна8уцкна8уцн"
-        }
-      ]
+      {
+        "userID": "6",
+        "message": "Red goaz fasta!",
+        "visible": true
+      },
+      {
+        "userID": "6",
+        "message": "Red goaz fasta!",
+        "visible": true
+      }
+    ],
+    "feeds": [
+      {
+        "userID": "1",
+        "message": "ащрукцщна8уцкна8уцн",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "offerID": "1",
+    "name": "Оформление интерьера",
+    "type": "Недвижимость",
+    "time": "Всегда актуально",
+    "location": "Москва",
+    "image": "http://s.pikabu.ru/post_img/2013/07/29/6/1375081510_1669157263.jpg",
+    "authorID": "1",
+    "visible": true,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipexea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eufugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollitanim id est laborum.",
+    "socialCounters": {
+      "likeCounter": "22",
+      "commentCounter": "3",
+      "feedCounter": "3",
+      "addCounter": 6
     },
-    {
-      "offerID": "3",
-      "name": "Оформление интерьера",
-      "type": "Недвижимость",
-      "time": "Всегда актуально",
-      "location": "Москва",
-      "image": "http://risovach.ru/upload/2012/11/generator/pidrila-ebanaya_3813534_orig_.jpeg",
-      "authorID": "2",
-      "visible": true,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipexea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eufugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollitanim id est laborum.",
-
-      "socialCounters": {
-        "likeCounter": "22",
-        "commentCounter": "3",
-        "feedCounter": "3",
-        "addCounter": "5"
+    "alreadyLiked": [
+      "1",
+      "2",
+      "3",
+      "7"
+    ],
+    "alreadyAdd": [
+      "7"
+    ],
+    "comments": [
+      {
+        "userID": "1",
+        "message": "В березовском можно в 3 раза дешевле взять",
+        "visible": true
       },
-      "alreadyLiked": [
-        "1",
-        "2",
-        "3"
-      ],
-      "comments": [
-        {
-          "userID": "1",
-          "message": "В березовском можно в 3 раза дешевле взять"
-        },
-        {
-          "userID": "2",
-          "message": "Приезжай к нам в Голливуд, есть приличная квартирка"
-        },
-        {
-          "userID": "3",
-          "message": "WaTaFuck..."
-        }
-      ],
-      "feeds": [
-        {
-          "userID": "1",
-          "message": "ащрукцщна8уцкна8уцн"
-        }
-      ]
+      {
+        "userID": "2",
+        "message": "Приезжай к нам в Голливуд, есть пfefsae asdfsdaf dasfdsafриличная квартирка",
+        "visible": true
+      },
+      {
+        "userID": "3",
+        "message": "WaTaFuck...",
+        "visible": true
+      }
+    ],
+    "feeds": [
+      {
+        "userID": "1",
+        "message": "ащрукцщна8уцкна8уцн",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "offerID": "2",
+    "name": "Оформление интерьера",
+    "type": "Недвижимость",
+    "time": "Всегда актуально",
+    "location": "Москва",
+    "image": "http://risovach.ru/upload/2012/11/generator/pidrila-ebanaya_3813534_orig_.jpeg",
+    "authorID": "2",
+    "visible": true,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipexea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eufugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollitanim id est laborum.",
+    "socialCounters": {
+      "likeCounter": 23,
+      "commentCounter": "3",
+      "feedCounter": "3",
+      "addCounter": 6
     },
-    {
-      "offerID": "4",
-      "name": "Завелись еретики?",
-      "type": "Услуги",
-      "time": "Всегда актуально",
-      "location": "Империум Человечества",
-      "image": "http://pics.livejournal.com/che_ratnik/pic/001szqp3",
-      "authorID": "5",
-      "visible": true,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipexea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eufugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollitanim id est laborum.",
-
-      "socialCounters": {
-        "likeCounter": "22",
-        "commentCounter": "3",
-        "feedCounter": "3",
-        "addCounter": "5"
+    "alreadyAdd": [
+      "7"
+    ],
+    "alreadyLiked": [
+      "1",
+      "2",
+      "3",
+      "7"
+    ],
+    "comments": [
+      {
+        "userID": "1",
+        "message": "В березовском можно в 3 раза дешевле взять",
+        "visible": true
       },
-      "alreadyLiked": [
-        "1",
-        "2",
-        "3"
-      ],
-      "comments": [
-        {
-          "userID": "1",
-          "message": "В березовском видел чернокнижка"
-        },
-        {
-          "userID": "2",
-          "message": "Приезжай к нам в Голливуд, тут слаанешитки"
-        },
-        {
-          "userID": "3",
-          "message": "WaTaFuck..."
-        }
-      ],
-      "feeds": [
-        {
-          "userID": "1",
-          "message": "ащрукцщна8уцкна8уцн"
-        }
-      ]
+      {
+        "userID": "2",
+        "message": "Приезжай к нам в Голливуд, есть приличная квартирка",
+        "visible": true
+      },
+      {
+        "userID": "3",
+        "message": "WaTaFuck...",
+        "visible": true
+      }
+    ],
+    "feeds": [
+      {
+        "userID": "1",
+        "message": "ащрукцщна8уцкна8уцн",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "offerID": "3",
+    "name": "Завелись еретики?",
+    "type": "Услуги",
+    "time": "Всегда актуально",
+    "location": "Империум Человечества",
+    "image": "http://pics.livejournal.com/che_ratnik/pic/001szqp3",
+    "authorID": "5",
+    "visible": true,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipexea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eufugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollitanim id est laborum.",
+    "socialCounters": {
+      "likeCounter": 25,
+      "commentCounter": "3",
+      "feedCounter": "3",
+      "addCounter": 7
     },
-    {
-      "offerID": "5",
-      "name": "Оформление интерьера",
-      "type": "Недвижимость",
-      "time": "Всегда актуально",
-      "location": "Москва",
-      "image": "https://pp.vk.me/c627119/v627119360/70819/HzuKaioKMeA.jpg",
-      "authorID": "6",
-      "visible": true,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipexea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eufugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollitanim id est laborum.",
-
-      "socialCounters": {
-        "likeCounter": "22",
-        "commentCounter": "3",
-        "feedCounter": "3",
-        "addCounter": "5"
+    "alreadyLiked": [
+      "1",
+      "2",
+      "3",
+      "7",
+      "6"
+    ],
+    "alreadyAdd": [
+      "7",
+      "6"
+    ],
+    "comments": [
+      {
+        "userID": "6",
+        "message": "",
+        "visible": true
       },
-      "alreadyLiked": [
-        "1",
-        "2",
-        "3"
-      ],
-      "comments": [],
-      "feeds": [
-        {
-          "userID": "1",
-          "message": "ащрукцщна8уцкна8уцн"
-        }
-      ]
+      {
+        "userID": "6",
+        "message": "",
+        "visible": true
+      },
+      {
+        "userID": "1",
+        "message": "В березовском видел чернокнижка",
+        "visible": true
+      },
+      {
+        "userID": "2",
+        "message": "Приезжай к нам в Голливуд, тут слаанешитки",
+        "visible": true
+      },
+      {
+        "userID": "3",
+        "message": "WaTaFuck...",
+        "visible": true
+      },
+      {
+        "userID": "7",
+        "message": "Kill them all",
+        "visible": true
+      }
+    ],
+    "feeds": [
+      {
+        "userID": "6",
+        "message": "Lol",
+        "visible": true
+      },
+      {
+        "userID": "1",
+        "message": "ащрукцщна8уцкна8уцн",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "offerID": "4",
+    "name": "Оформление интерьера",
+    "type": "Недвижимость",
+    "time": "Всегда актуально",
+    "location": "Москва",
+    "image": "https://pp.vk.me/c627119/v627119360/70819/HzuKaioKMeA.jpg",
+    "authorID": "6",
+    "visible": true,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipexea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eufugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollitanim id est laborum.",
+    "socialCounters": {
+      "likeCounter": 25,
+      "commentCounter": "3",
+      "feedCounter": "3",
+      "addCounter": 9
     },
-    {
-      "offerID": "6",
-      "name": "Оформление интерьера",
-      "type": "Недвижимость",
-      "time": "Всегда актуально",
-      "location": "Москва",
-      "image": "http://cs6.pikabu.ru/images/big_size_comm/2015-01_1/14203017957828.jpg",
-      "authorID": "1",
-      "visible": true,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipexea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eufugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollitanim id est laborum.",
-
-      "socialCounters": {
-        "likeCounter": "22",
-        "commentCounter": "3",
-        "feedCounter": "3",
-        "addCounter": "5"
-      },
-      "alreadyLiked": [
-        "1",
-        "2",
-        "3"
-      ],
-      "comments": [
-        {
-          "userID": "1",
-          "message": "В березовском можно в 3 раза дешевле взять"
-        },
-        {
-          "userID": "2",
-          "message": "Приезжай к нам в Голливуд, есть приличная квартирка"
-        },
-        {
-          "userID": "3",
-          "message": "WaTaFuck..."
-        }
-      ],
-      "feeds": [
-        {
-          "userID": "1",
-          "message": "ащрукцщна8уцкна8уцн"
-        }
-      ]
+    "alreadyLiked": [
+      "1",
+      "2",
+      "3",
+      "7"
+    ],
+    "alreadyAdd": [
+      "7"
+    ],
+    "comments": [],
+    "feeds": [
+      {
+        "userID": "1",
+        "message": "ащрукцщна8уцкна8уцн",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "offerID": "5",
+    "name": "Оформление интерьера",
+    "type": "Недвижимость",
+    "time": "Всегда актуально",
+    "location": "Москва",
+    "image": "http://cs6.pikabu.ru/images/big_size_comm/2015-01_1/14203017957828.jpg",
+    "authorID": "1",
+    "visible": false,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipexea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eufugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollitanim id est laborum.",
+    "socialCounters": {
+      "likeCounter": "22",
+      "commentCounter": "3",
+      "feedCounter": "3",
+      "addCounter": "5"
     },
-    {
-      "offerID": "7",
-      "name": "Оформление интерьера",
-      "type": "Недвижимость",
-      "time": "Всегда актуально",
-      "location": "Москва",
-      "image": "https://pp.vk.me/c627119/v627119360/70819/HzuKaioKMeA.jpg",
-      "authorID": "2",
-      "visible": true,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipexea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eufugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollitanim id est laborum.",
-
-      "socialCounters": {
-        "likeCounter": "22",
-        "commentCounter": "3",
-        "feedCounter": "3",
-        "addCounter": "5"
+    "alreadyLiked": [
+      "1",
+      "2",
+      "3"
+    ],
+    "alreadyAdd": [],
+    "comments": [
+      {
+        "userID": "1",
+        "message": "В березовском можно в 3 раза дешевле взять",
+        "visible": true
       },
-      "alreadyLiked": [
-        "1",
-        "2",
-        "3"
-      ],
-      "comments": [
-        {
-          "userID": "1",
-          "message": "В березовском можно в 3 раза дешевле взять"
-        },
-        {
-          "userID": "2",
-          "message": "Приезжай к нам в Голливуд, есть приличная квартирка"
-        },
-        {
-          "userID": "3",
-          "message": "WaTaFuck..."
-        }
-      ],
-      "feeds": [
-        {
-          "userID": "1",
-          "message": "ащрукцщна8уцкна8уцн"
-        }
-      ]
+      {
+        "userID": "2",
+        "message": "Приезжай к нам в Голливуд, есть приличная квартирка",
+        "visible": true
+      },
+      {
+        "userID": "3",
+        "message": "WaTaFuck...",
+        "visible": true
+      }
+    ],
+    "feeds": [
+      {
+        "userID": "1",
+        "message": "ащрукцщна8уцкна8уцн",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "offerID": "6",
+    "name": "Оформление интерьера",
+    "type": "Недвижимость",
+    "time": "Всегда актуально",
+    "location": "Москва",
+    "image": "https://pp.vk.me/c627119/v627119360/70819/HzuKaioKMeA.jpg",
+    "authorID": "2",
+    "visible": true,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipexea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eufugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollitanim id est laborum.",
+    "socialCounters": {
+      "likeCounter": 24,
+      "commentCounter": "3",
+      "feedCounter": "3",
+      "addCounter": 7
     },
-    {
-      "offerID": "8",
-      "name": "Оформление интерьера",
-      "type": "Недвижимость",
-      "time": "Всегда актуально",
-      "location": "Москва",
-      "image": "http://s.pikabu.ru/post_img/2013/07/29/6/1375081510_1669157263.jpg",
-      "authorID": "5",
-      "visible": true,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipexea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eufugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollitanim id est laborum.",
-
-      "socialCounters": {
-        "likeCounter": "22",
-        "commentCounter": "3",
-        "feedCounter": "3",
-        "addCounter": "5"
+    "alreadyLiked": [
+      "1",
+      "2",
+      "3",
+      "7",
+      "6"
+    ],
+    "alreadyAdd": [
+      "7",
+      "6"
+    ],
+    "comments": [
+      {
+        "userID": "1",
+        "message": "В березовском можно в 3 раза дешевле взять",
+        "visible": true
       },
-      "alreadyLiked": [
-        "1",
-        "2",
-        "3"
-      ],
-      "comments": [
-        {
-          "userID": "1",
-          "message": "В березовском можно в 3 раза дешевле взять"
-        },
-        {
-          "userID": "2",
-          "message": "Приезжай к нам в Голливуд, есть приличная квартирка"
-        },
-        {
-          "userID": "4",
-          "message": "WaTaFuck..."
-        },
-        {
-          "userID": "2",
-          "message": "WaTaFuck..."
-        },
-        {
-          "userID": "6",
-          "message": "WaTaFuck..."
-        }
-      ],
-      "feeds": [
-        {
-          "userID": "1",
-          "message": "ащрукцщна8уцкна8уцн"
-        }
-      ]
+      {
+        "userID": "2",
+        "message": "Приезжай к нам в Голливуд, есть приличная квартирка",
+        "visible": true
+      },
+      {
+        "userID": "3",
+        "message": "WaTaFuck...",
+        "visible": true
+      }
+    ],
+    "feeds": [
+      {
+        "userID": "6",
+        "message": "Жили были три китайца",
+        "visible": true
+      },
+      {
+        "userID": "6",
+        "message": "Ziga",
+        "visible": true
+      },
+      {
+        "userID": "1",
+        "message": "ащрукцщна8уцкна8уцн",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "offerID": "7",
+    "name": "Жили были три китайца",
+    "type": "Недвижимость",
+    "time": "Всегда актуально",
+    "location": "Москва",
+    "image": "http://s.pikabu.ru/post_img/2013/07/29/6/1375081510_1669157263.jpg",
+    "authorID": "5",
+    "visible": true,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipexea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eufugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollitanim id est laborum.",
+    "socialCounters": {
+      "likeCounter": 27,
+      "commentCounter": "3",
+      "feedCounter": "3",
+      "addCounter": 10
     },
-    {
-      "offerID": "9",
-      "name": "Оформление интерьера",
-      "type": "Недвижимость",
-      "time": "Всегда актуально",
-      "location": "Москва",
-      "image": "http://cs6.pikabu.ru/images/big_size_comm/2015-01_1/14203017957828.jpg",
-      "authorID": "1",
-      "visible": true,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipexea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eufugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollitanim id est laborum.",
-
-      "socialCounters": {
-        "likeCounter": "22",
-        "commentCounter": "3",
-        "feedCounter": "3",
-        "addCounter": "5"
+    "alreadyLiked": [
+      "1",
+      "2",
+      "3",
+      "7"
+    ],
+    "alreadyAdd": [
+      "7"
+    ],
+    "comments": [
+      {
+        "userID": "1",
+        "message": "В березовском можно в 3 раза дешевле взять",
+        "visible": true
       },
-      "alreadyLiked": [
-        "1",
-        "2",
-        "3"
-      ],
-      "comments": [
-        {
-          "userID": "1",
-          "message": "В березовском можно в 3 раза дешевле взять"
-        },
-        {
-          "userID": "2",
-          "message": "Приезжай к нам в Голливуд, есть приличная квартирка"
-        },
-        {
-          "userID": "3",
-          "message": "WaTaFuck..."
-        }
-      ],
-      "feeds": [
-        {
-          "userID": "1",
-          "message": "ащрукцщна8уцкна8уцн"
-        }
-      ]
+      {
+        "userID": "2",
+        "message": "Приезжай к нам в Голливуд, есть приличная квартирка",
+        "visible": true
+      },
+      {
+        "userID": "4",
+        "message": "WaTaFuck...",
+        "visible": true
+      },
+      {
+        "userID": "2",
+        "message": "WaTaFuck...",
+        "visible": true
+      },
+      {
+        "userID": "6",
+        "message": "WaTaFuck...",
+        "visible": true
+      }
+    ],
+    "feeds": [
+      {
+        "userID": "1",
+        "message": "ащрукцщна8уцкна8уцн",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "offerID": "8",
+    "name": "Вы не готовы!",
+    "type": "Недвижимость",
+    "time": "Всегда актуально",
+    "location": "Москва",
+    "image": "http://habrastorage.org/storage2/176/fdd/ef7/176fddef7beb13250e35d1c110d1558b.jpg",
+    "authorID": "1",
+    "visible": true,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipexea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eufugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollitanim id est laborum.",
+    "socialCounters": {
+      "likeCounter": 24,
+      "commentCounter": "3",
+      "feedCounter": "3",
+      "addCounter": 13
     },
-    {
-      "offerID": "10",
-      "name": "Оформление интерьера",
-      "type": "Недвижимость",
-      "time": "Всегда актуально",
-      "location": "Москва",
-      "image": "http://cs6.pikabu.ru/images/big_size_comm/2015-01_1/14203017957828.jpg",
-      "authorID": "1",
-      "visible": true,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipexea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eufugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollitanim id est laborum.",
-
-      "socialCounters": {
-        "likeCounter": "22",
-        "commentCounter": "3",
-        "feedCounter": "3",
-        "addCounter": "5"
+    "alreadyLiked": [
+      "1",
+      "2",
+      "3",
+      "7",
+      "6"
+    ],
+    "alreadyAdd": [
+      "7",
+      "6"
+    ],
+    "comments": [
+      {
+        "userID": "6",
+        "message": "lol",
+        "visible": true
       },
-      "alreadyLiked": [
-        "1",
-        "2",
-        "3"
-      ],
-      "comments": [
-        {
-          "userID": "1",
-          "message": "В березовском можно в 3 раза дешевле взять"
-        },
-        {
-          "userID": "2",
-          "message": "Приезжай к нам в Голливуд, есть приличная квартирка"
-        },
-        {
-          "userID": "3",
-          "message": "WaTaFuck..."
-        }
-      ],
-      "feeds": [
-        {
-          "userID": "1",
-          "message": "ащрукцщна8уцкна8уцн"
-        }
-      ]
+      {
+        "userID": "6",
+        "message": "ggg",
+        "visible": true
+      },
+      {
+        "userID": "6",
+        "message": "fff",
+        "visible": true
+      },
+      {
+        "userID": "6",
+        "message": "fff",
+        "visible": true
+      },
+      {
+        "userID": "6",
+        "message": "dddd",
+        "visible": true
+      },
+      {
+        "userID": "6",
+        "message": "dddd",
+        "visible": true
+      },
+      {
+        "userID": "6",
+        "message": "",
+        "visible": true
+      },
+      {
+        "userID": "6",
+        "message": "Ziga Zaga",
+        "visible": true
+      },
+      {
+        "userID": "7",
+        "message": "Lol",
+        "visible": true
+      },
+      {
+        "userID": "1",
+        "message": "В березовском можно в 3 раза дешевле взять",
+        "visible": true
+      },
+      {
+        "userID": "2",
+        "message": "Приезжай к нам в Голливуд, есть приличная квартирка",
+        "visible": true
+      },
+      {
+        "userID": "3",
+        "message": "WaTaFuck...",
+        "visible": true
+      },
+      {
+        "userID": "7",
+        "message": "Olololo",
+        "visible": true
+      },
+      {
+        "userID": "7",
+        "message": "Ziga Zaga",
+        "visible": true
+      },
+      {
+        "userID": "7",
+        "message": "Lololo",
+        "visible": true
+      },
+      {
+        "userID": "7",
+        "message": "Lolo",
+        "visible": true
+      },
+      {
+        "userID": "7",
+        "message": "Lol",
+        "visible": true
+      },
+      {
+        "userID": "7",
+        "message": "ziga",
+        "visible": true
+      },
+      {
+        "userID": "7",
+        "message": "lol",
+        "visible": true
+      }
+    ],
+    "feeds": [
+      {
+        "userID": "1",
+        "message": "ащрукцщна8уцкна8уцн",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "offerID": "9",
+    "name": "Оформление интерьера",
+    "type": "Недвижимость",
+    "time": "Всегда актуально",
+    "location": "Москва",
+    "image": "http://images.noob-club.ru/news/2014/08/ikq38se8u0.png",
+    "authorID": "1",
+    "visible": false,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipexea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eufugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollitanim id est laborum.",
+    "socialCounters": {
+      "likeCounter": "22",
+      "commentCounter": "3",
+      "feedCounter": "3",
+      "addCounter": "5"
     },
-    {
-      "offerID": "11",
-      "name": "Оформление интерьера",
-      "type": "Недвижимость",
-      "time": "Всегда актуально",
-      "location": "Москва",
-      "image": "http://cs6.pikabu.ru/images/big_size_comm/2015-01_1/14203017957828.jpg",
-      "authorID": "1",
-      "visible": true,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipexea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eufugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollitanim id est laborum.",
-
-      "socialCounters": {
-        "likeCounter": "22",
-        "commentCounter": "3",
-        "feedCounter": "3",
-        "addCounter": "5"
+    "alreadyLiked": [
+      "1",
+      "2",
+      "3"
+    ],
+    "alreadyAdd": [],
+    "comments": [
+      {
+        "userID": "1",
+        "message": "В березовском можно в 3 раза дешевле взять",
+        "visible": true
       },
-      "alreadyLiked": [
-        "1",
-        "2",
-        "3"
-      ],
-      "comments": [
-        {
-          "userID": "1",
-          "message": "В березовском можно в 3 раза дешевле взять"
-        },
-        {
-          "userID": "2",
-          "message": "Приезжай к нам в Голливуд, есть приличная квартирка"
-        },
-        {
-          "userID": "3",
-          "message": "WaTaFuck..."
-        }
-      ],
-      "feeds": [
-        {
-          "userID": "1",
-          "message": "ащрукцщна8уцкна8уцн"
-        }
-      ]
+      {
+        "userID": "2",
+        "message": "Приезжай к нам в Голливуд, есть приличная квартирка",
+        "visible": true
+      },
+      {
+        "userID": "3",
+        "message": "WaTaFuck...",
+        "visible": true
+      }
+    ],
+    "feeds": [
+      {
+        "userID": "1",
+        "message": "ащрукцщна8уцкна8уцн",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "offerID": "10",
+    "name": "Оформление интерьера",
+    "type": "Недвижимость",
+    "time": "Всегда актуально",
+    "location": "Москва",
+    "image": "http://cs6.pikabu.ru/images/big_size_comm/2015-01_1/14203017957828.jpg",
+    "authorID": "1",
+    "visible": false,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipexea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eufugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollitanim id est laborum.",
+    "socialCounters": {
+      "likeCounter": "22",
+      "commentCounter": "3",
+      "feedCounter": "3",
+      "addCounter": "5"
     },
-    {
-      "offerID": "12",
-      "name": "Оформление интерьера",
-      "type": "Недвижимость",
-      "time": "Всегда актуально",
-      "location": "Москва",
-      "image": "http://cs6.pikabu.ru/images/big_size_comm/2015-01_1/14203017957828.jpg",
-      "authorID": "1",
-      "visible": true,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipexea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eufugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollitanim id est laborum.",
-
-      "socialCounters": {
-        "likeCounter": "22",
-        "commentCounter": "3",
-        "feedCounter": "3",
-        "addCounter": "5"
+    "alreadyLiked": [
+      "1",
+      "2",
+      "3"
+    ],
+    "alreadyAdd": [],
+    "comments": [
+      {
+        "userID": "1",
+        "message": "В березовском можно в 3 раза дешевле взять",
+        "visible": true
       },
-      "alreadyLiked": [
-        "1",
-        "2",
-        "3"
-      ],
-      "comments": [
-        {
-          "userID": "1",
-          "message": "В березовском можно в 3 раза дешевле взять"
-        },
-        {
-          "userID": "2",
-          "message": "Приезжай к нам в Голливуд, есть приличная квартирка"
-        },
-        {
-          "userID": "3",
-          "message": "WaTaFuck..."
-        }
-      ],
-      "feeds": [
-        {
-          "userID": "1",
-          "message": "ащрукцщна8уцкна8уцн"
-        }
-      ]
+      {
+        "userID": "2",
+        "message": "Приезжай к нам в Голливуд, есть приличная квартирка",
+        "visible": true
+      },
+      {
+        "userID": "3",
+        "message": "WaTaFuck...",
+        "visible": true
+      }
+    ],
+    "feeds": [
+      {
+        "userID": "1",
+        "message": "ащрукцщна8уцкна8уцн",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "offerID": "11",
+    "name": "Оформление портала",
+    "type": "Недвижимость",
+    "time": "Всегда актуально",
+    "location": "Драенор",
+    "image": "https://i.ytimg.com/vi/o_accAVzhoE/maxresdefault.jpg",
+    "authorID": "1",
+    "visible": true,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipexea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eufugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollitanim id est laborum.",
+    "socialCounters": {
+      "likeCounter": 23,
+      "commentCounter": "3",
+      "feedCounter": "3",
+      "addCounter": 7
     },
-    {
-      "offerID": "13",
-      "name": "Оформление интерьера",
-      "type": "Недвижимость",
-      "time": "Всегда актуально",
-      "location": "Москва",
-      "image": "http://cs6.pikabu.ru/images/big_size_comm/2015-01_1/14203017957828.jpg",
-      "authorID": "1",
-      "visible": true,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipexea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eufugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollitanim id est laborum.",
-
-      "socialCounters": {
-        "likeCounter": "22",
-        "commentCounter": "3",
-        "feedCounter": "3",
-        "addCounter": "5"
+    "alreadyLiked": [
+      "1",
+      "2",
+      "3",
+      "7",
+      "6"
+    ],
+    "alreadyAdd": [
+      "7",
+      "6"
+    ],
+    "comments": [
+      {
+        "userID": "1",
+        "message": "В березовском можно в 3 раза дешевле взять",
+        "visible": true
       },
-      "alreadyLiked": [
-        "1",
-        "2",
-        "3"
-      ],
-      "comments": [
-        {
-          "userID": "1",
-          "message": "В березовском можно в 3 раза дешевле взять"
-        },
-        {
-          "userID": "2",
-          "message": "Приезжай к нам в Голливуд, есть приличная квартирка"
-        },
-        {
-          "userID": "3",
-          "message": "WaTaFuck..."
-        }
-      ],
-      "feeds": [
-        {
-          "userID": "1",
-          "message": "ащрукцщна8уцкна8уцн"
-        }
-      ]
+      {
+        "userID": "2",
+        "message": "Приезжай к нам в Голливуд, есть приличная квартирка",
+        "visible": true
+      },
+      {
+        "userID": "3",
+        "message": "WaTaFuck...",
+        "visible": true
+      },
+      {
+        "userID": "7",
+        "message": ":jgf",
+        "visible": true
+      },
+      {
+        "userID": "7",
+        "message": "ttt",
+        "visible": true
+      },
+      {
+        "userID": "7",
+        "message": "ggg",
+        "visible": true
+      },
+      {
+        "userID": "7",
+        "message": "Kill them all",
+        "visible": true
+      }
+    ],
+    "feeds": [
+      {
+        "userID": "6",
+        "message": "Лок-тар Огар!"
+      },
+      {
+        "userID": "1",
+        "message": "ащрукцщна8уцкна8уцн",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "offerID": "12",
+    "name": "Оформление интерьера",
+    "type": "Недвижимость",
+    "time": "Всегда актуально",
+    "location": "Москва",
+    "image": "http://cs6.pikabu.ru/images/big_size_comm/2015-01_1/14203017957828.jpg",
+    "authorID": "1",
+    "visible": false,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipexea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eufugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollitanim id est laborum.",
+    "socialCounters": {
+      "likeCounter": "22",
+      "commentCounter": "3",
+      "feedCounter": "3",
+      "addCounter": "5"
     },
-    {
-      "offerID": "14",
-      "name": "Оформление интерьера",
-      "type": "Недвижимость",
-      "time": "Всегда актуально",
-      "location": "Москва",
-      "image": "http://cs6.pikabu.ru/images/big_size_comm/2015-01_1/14203017957828.jpg",
-      "authorID": "1",
-      "visible": true,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipexea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eufugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollitanim id est laborum.",
-
-      "socialCounters": {
-        "likeCounter": "22",
-        "commentCounter": "3",
-        "feedCounter": "3",
-        "addCounter": "5"
+    "alreadyLiked": [
+      "1",
+      "2",
+      "3"
+    ],
+    "alreadyAdd": [],
+    "comments": [
+      {
+        "userID": "1",
+        "message": "В березовском можно в 3 раза дешевле взять",
+        "visible": true
       },
-      "alreadyLiked": [
-        "1",
-        "2",
-        "3"
-      ],
-      "comments": [
-        {
-          "userID": "1",
-          "message": "В березовском можно в 3 раза дешевле взять"
-        },
-        {
-          "userID": "2",
-          "message": "Приезжай к нам в Голливуд, есть приличная квартирка"
-        },
-        {
-          "userID": "3",
-          "message": "WaTaFuck..."
-        }
-      ],
-      "feeds": [
-        {
-          "userID": "1",
-          "message": "ащрукцщна8уцкна8уцн"
-        }
-      ]
-    }
-  ]
-}
+      {
+        "userID": "2",
+        "message": "Приезжай к нам в Голливуд, есть приличная квартирка",
+        "visible": true
+      },
+      {
+        "userID": "3",
+        "message": "WaTaFuck...",
+        "visible": true
+      }
+    ],
+    "feeds": [
+      {
+        "userID": "1",
+        "message": "ащрукцщна8уцкна8уцн",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "offerID": "13",
+    "name": "Оформление интерьера",
+    "type": "Недвижимость",
+    "time": "Всегда актуально",
+    "location": "Москва",
+    "image": "http://cs6.pikabu.ru/images/big_size_comm/2015-01_1/14203017957828.jpg",
+    "authorID": "1",
+    "visible": true,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipexea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eufugiatnulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntmollitanim id est laborum.",
+    "socialCounters": {
+      "likeCounter": "22",
+      "commentCounter": "3",
+      "feedCounter": "3",
+      "addCounter": 6
+    },
+    "alreadyLiked": [
+      "1",
+      "2",
+      "3",
+      "7"
+    ],
+    "alreadyAdd": [
+      "7"
+    ],
+    "comments": [
+      {
+        "userID": "1",
+        "message": "В березовском можно в 3 раза дешевле взять",
+        "visible": true
+      },
+      {
+        "userID": "2",
+        "message": "Приезжай к нам в Голливуд, есть приличная квартирка",
+        "visible": true
+      },
+      {
+        "userID": "3",
+        "message": "WaTaFuck...",
+        "visible": true
+      }
+    ],
+    "feeds": [
+      {
+        "userID": "1",
+        "message": "ащрукцщна8уцкна8уцн",
+        "visible": true
+      }
+    ]
+  }
+]

@@ -58,7 +58,8 @@ var controller = (function() {
               offers[id].comments.unshift(
                 {
                   userID: activeUser,
-                  message: $(this).val()
+                  message: $(this).val(),
+                  visible: true
                 }
               );
               _saveData(id);
@@ -67,10 +68,29 @@ var controller = (function() {
         })
       });
     }
+    function _newFeed() {
+      $('.popup').on('focus', '.add-feed textarea', function () {
+        var id = parseInt($(this).closest('.popup-content').data('number'));
+        $(this).keypress(function (eventObject) {
+          if ($(this).val()) {
+            if (eventObject.which === 13) {
+              offers[id].feeds.unshift(
+                {
+                  userID: activeUser,
+                  message: $(this).val(),
+                  visible: true
+                }
+              );
+              _saveData(id);
+              _getPopupTemplate(id);
+            }
+          }
+        })
+      });
+    }
     function _likeBtnClick() {
       $('.offers').on('click', '.like', function () {
         var id = parseInt($(this).closest('.offer').data('number'));
-        $(this).css({color: "#b13897"});
         //socialCountersCheck(offers[id].alreadyLiked, id, offers[id].socialCounters.likeCounter);
         if (offers[id].alreadyLiked.indexOf(activeUser, 0) === -1) {
           offers[id].socialCounters.likeCounter = parseInt(offers[id].socialCounters.likeCounter) + 1;
@@ -82,7 +102,6 @@ var controller = (function() {
     function _addBtnClick() {
       $('.offers').on('click', '.add', function () {
         var id = parseInt($(this).closest('.offer').data('number'));
-        $(this).css({color: "#613a9f"});
         if (offers[id].alreadyAdd.indexOf(activeUser, 0) === -1){
           offers[id].socialCounters.addCounter = parseInt(offers[id].socialCounters.addCounter) + 1;
           offers[id].alreadyAdd.push(activeUser);
@@ -119,8 +138,8 @@ var controller = (function() {
     _closePopup();
     _delBtnClick();
     _newComment();
+    _newFeed();
   }
-
 
   function _socialCheck(id) {
       if ((offers[id].alreadyAdd.indexOf(activeUser, 0) !== -1)) {
@@ -141,7 +160,6 @@ var controller = (function() {
       });
     })
   }
-
 
   return {
     render: function () {

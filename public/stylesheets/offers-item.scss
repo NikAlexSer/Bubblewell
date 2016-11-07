@@ -1,5 +1,8 @@
 $offerWidth: 220px;
 $iconFont: LigatureSymbols;
+$red: random(256)-1;
+$green: random(256)-1;
+$blue: random(256)-1;
 
 .offer {
   position: relative;
@@ -15,7 +18,7 @@ $iconFont: LigatureSymbols;
   width: $offerWidth;
   .hover {
     div {
-      background-color: #abc9e8;
+      background-color: rgb($red, $green, $blue);
       cursor: pointer;
     }
     position: absolute;

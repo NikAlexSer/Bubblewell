@@ -135,7 +135,7 @@ var controller = (function() {
     }
     function _closePopup() {
       $('.popup-bg').on('click', '.popup-close', function () {
-        $('body').toggleClass('.scroll');
+        $('body').toggleClass('scroll');
         $('.popup-bg').toggle();
       });
     }

@@ -7,7 +7,7 @@
                 <img class="avatar" src="http://cs6.pikabu.ru/images/big_size_comm/2015-01_1/14203017957828.jpg"/>
             </div>
         </div>
-        <div class="popup-info clearfix"> <!-- CCLEARFIX --->
+        <div class="popup-info clearfix">
             <div class="left-column">
                 <h3>{{name}}</h3>
                 <span class="offer-type">{{type}}</span>
@@ -21,7 +21,7 @@
             <div class="right-column">
                 <div class="buttons">
                     <span>Добавить к себе</span>
-                    <span>Мне нравитЬся</span>
+                    <span>Мне нравится</span>
                     <span>Комментировать</span>
                 </div>
             </div>
@@ -47,7 +47,32 @@
                 {{/if}}
             {{/each}}
             <div class="add-feed">
+                <img class="avatar">
                 <textarea maxlength="500"></textarea>
+            </div>
+            <div class="popup-adds">
+                <span>Добавили к себе</span>
+                {{#each alreadyAdd as |adds|}}
+                    {{#if this}}
+                        {{#each ../../users as |users|}}
+                            {{#compare adds "==" users.userID}}
+                                <img src="{{users.avatar}}" class="avatar">
+                            {{/compare}}
+                        {{/each}}
+                    {{/if}}
+                {{/each}}
+            </div>
+            <div class="popup-likes">
+                <span>Нравится</span>
+                {{#each alreadyLiked as |likes|}}
+                    {{#if this}}
+                        {{#each ../../users as |users|}}
+                            {{#compare likes "==" users.userID}}
+                                <img src="{{users.avatar}}" class="avatar">
+                            {{/compare}}
+                        {{/each}}
+                    {{/if}}
+                {{/each}}
             </div>
         </div>
     </div>

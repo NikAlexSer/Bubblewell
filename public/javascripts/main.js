@@ -4,6 +4,10 @@ var controller = (function() {
       offers,
       activeUser = '6';
 
+  /**
+   * Получение общих данных и шаблона попапа с вызовом рендера
+   * @private
+     */
   function _getUsers() {
     $.getJSON('http://127.0.0.1:3000/api/users', function(data){
       users = data.users;
@@ -15,24 +19,37 @@ var controller = (function() {
     });
   };
   function _getPopupTemplate(id) {
+    var $dest = $('.popup');
     $.post('http://127.0.0.1:3000/api/popup/', {
       offers: JSON.stringify(offers[id])
     }, function(){
-      $('.popup').load('http://127.0.0.1:3000/api/renderpopup/');
+      $dest.load('http://127.0.0.1:3000/api/renderpopup/', function () {
+        $dest.find('.add-feed .avatar').attr('src', users[parseInt(activeUser)].avatar);
+      });
     })
   };
 
+  /**
+   * Предзагрузка данных при загрзуке js
+   * @private
+     */
   function _init() {
     _getOffers();
     _getUsers();
   };
   _init();
 
+
+  /**
+   * Навешивание ивентов
+   * Зачем разделил все ивенты по функциям - для удобства
+   * Сравненик с -1 - при отсутствии элемента в массиве функция indexOf возвращает -1
+   * @private
+     */
   function _setEventsHandlers() {
     /** not working yet =( **/
-    function socialCountersCheck(arr, id, dest) {
+    function _socialCountersCheck(arr, id, dest) {
       if (arr.indexOf(activeUser, 0) === -1){
-        console.log(dest);
         dest = parseInt(dest) + 1;
         arr.push(activeUser);
         _saveData(id)
@@ -91,7 +108,6 @@ var controller = (function() {
     function _likeBtnClick() {
       $('.offers').on('click', '.like', function () {
         var id = parseInt($(this).closest('.offer').data('number'));
-        //socialCountersCheck(offers[id].alreadyLiked, id, offers[id].socialCounters.likeCounter);
         if (offers[id].alreadyLiked.indexOf(activeUser, 0) === -1) {
           offers[id].socialCounters.likeCounter = parseInt(offers[id].socialCounters.likeCounter) + 1;
           offers[id].alreadyLiked.push(activeUser);
@@ -131,6 +147,7 @@ var controller = (function() {
         _getPopupTemplate(id);
       });
     }
+
     function _commentHover() {
       $('.offers').on('click', '.comments-item', function () {
         console.log('lol');
@@ -148,6 +165,11 @@ var controller = (function() {
     _commentHover();
   }
 
+  /**
+   * Проверка уже поставленных лайков текущим пользователем
+   * @param id
+   * @private
+     */
   function _socialCheck(id) {
       if ((offers[id].alreadyAdd.indexOf(activeUser, 0) !== -1)) {
         $('#offerID-'+ id + ' .add').addClass('add-active');
@@ -156,6 +178,14 @@ var controller = (function() {
         $('#offerID-'+ id + ' .like').addClass('like-active')
       }
   }
+
+  /**
+   * Сохранение данных
+   * Дважды отправляются оферы, ибо одиночный офер по id нужен для отрисовки тольки измененного офера,
+   * а не всей страницы
+   * @param id
+   * @private
+     */
   function _saveData(id) {
     $.post('http://127.0.0.1:3000/api/save/', {
       offer: JSON.stringify(offers[id]),

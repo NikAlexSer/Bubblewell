@@ -62,7 +62,7 @@ var controller = (function() {
     function _commentBtnClick() {
       $('.offers').on('click', '.com', function () {
         $('.comments').add('.add-comment').hide();
-        $(this).css({color: "#5574ad"})
+        $(this).toggleClass('comment-active')
           .closest('.offer').toggleClass('offer-active')
       });
     }
@@ -150,8 +150,16 @@ var controller = (function() {
 
     function _commentHover() {
       $('.offers').on('click', '.comments-item', function () {
-        console.log('lol');
         $('.delete', this).toggle()
+      })
+    }
+    function _hideComment() {
+      $('.offers').on('click', '.delete', function () {
+        var id = parseInt($(this).closest('.offer').data('number')),
+            commentID = parseInt($(this).closest('.comments-item').data('number'));
+        console.log(offers[id].comments[commentID].visible)
+        offers[id].comments[commentID].visible = false;
+        _saveData(id);
       })
     }
     _commentBtnClick();
@@ -163,6 +171,7 @@ var controller = (function() {
     _newComment();
     _newFeed();
     _commentHover();
+    _hideComment();
   }
 
   /**

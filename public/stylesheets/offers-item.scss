@@ -54,7 +54,7 @@ $blue: random(256)-1;
         color: #ff1107;
       }
       .com:hover {
-        color: #2b45ff;
+        color: #5574ad;
       }
       .add:hover {
         color: #ffdf10;
@@ -159,7 +159,6 @@ $blue: random(256)-1;
     line-height: 50%;
     text-shadow: 0px 0px 0px black;
     .comment {
-      float: left;
       width: calc(100% - 46px);
       margin-left: 15px;
       line-height: initial;
@@ -167,10 +166,8 @@ $blue: random(256)-1;
       overflow: hidden;
       text-overflow: ellipsis;
     }
-  }
-  .comments-item {
     .avatar {
-      float: left;
+      display: inline-block;
     }
   }
   .avatar {
@@ -178,6 +175,8 @@ $blue: random(256)-1;
     width: 25px;
   }
   .add-comment {
+    margin-top: 5px;
+    margin-left: 15px;
     height: 40px;
     display: none;
     input {
@@ -201,7 +200,9 @@ $blue: random(256)-1;
 .like-active {
   color: #b13897;
 }
-
+.comment-active {
+  color: #5574ad;
+}
 .add-active {
   color: #613a9f;
 }

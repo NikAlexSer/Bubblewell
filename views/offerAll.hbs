@@ -51,7 +51,7 @@
                         {{#if this}}
                             {{#compare @index '<' 5}}
                                 {{#if comment-lol.visible}}
-                                    <div class="comments-item">
+                                    <div class="comments-item" data-number="{{@index}}">
                                         {{#each ../../users as |users-com|}}
                                             {{#compare comment-lol.userID "==" users-com.userID}}
                                                 <img src="{{users-com.avatar}}" class="avatar">

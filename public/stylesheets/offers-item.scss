@@ -136,7 +136,7 @@ $blue: random(256)-1;
       color: #5574ad;
       cursor: pointer;
       font-family: "PF Agora Sans Pro XThin";
-      text-shadow: 0px 0px 0px #5574ad;
+      text-shadow: 0 0 0 #5574ad;
     }
     span {
       font-family: Arial;
@@ -157,17 +157,21 @@ $blue: random(256)-1;
     height: 40px;
     padding: 5px 0 0 15px;
     line-height: 50%;
-    text-shadow: 0px 0px 0px black;
+    text-shadow: 0 0 0 black;
     .comment {
-      width: calc(100% - 46px);
+      display: inline-block;
+      height: 36px;
+      width: calc(100% - 66px);
       margin-left: 15px;
-      line-height: initial;
-      max-height: 18pt;
+      margin-top: 5px;
+      line-height: 12pt;
+      max-height: 36px;
       overflow: hidden;
       text-overflow: ellipsis;
     }
     .avatar {
       display: inline-block;
+      margin-bottom: 35px;
     }
   }
   .avatar {

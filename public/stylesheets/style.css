@@ -154,7 +154,7 @@ body {
     text-shadow: 0 0 0 #f5f8fc;
     text-align: center; }
     .offer .hover div {
-      background-color: #943112;
+      background-color: #1bbd51;
       cursor: pointer; }
     .offer .hover .buttons {
       padding: 0;
@@ -189,11 +189,10 @@ body {
 .offer .image {
   position: relative;
   margin: auto;
-  min-height: 40px;
   width: 100%;
   display: block; }
 
-.offer-image div {
+.offer-image-wrapper div {
   width: 220px; }
 
 .info {

@@ -73,12 +73,11 @@ $blue: random(256)-1;
 .offer .image {
   position: relative;
   margin: auto;
-  min-height: 40px;
   width: 100%;
   display: block;
 }
 
-.offer-image div {
+.offer-image-wrapper div {
   width: 220px;
 }
 

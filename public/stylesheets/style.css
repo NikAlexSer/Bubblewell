@@ -5,7 +5,7 @@ body {
 .wrapper {
   width: 974px;
   margin: 0 auto;
-  padding: 18px 33px; }
+  padding: 20px 35px; }
 
 @font-face {
   font-family: 'LigatureSymbols';
@@ -14,13 +14,13 @@ body {
 
 .offer-menu-bar {
   width: 100%;
-  height: 54px;
+  height: 55px;
   list-style: none;
   display: table;
   padding: 0;
   margin: 0;
-  background-color: white;
-  border: 1px solid darkgrey;
+  background-color: #ffffff;
+  border: 1px solid #e6e6e6;
   border-radius: 8px;
   text-shadow: 0 0 0 #5574ad;
   font-family: "PF Agora Sans Pro XThin";
@@ -63,7 +63,6 @@ body {
       display: block;
       color: white;
       text-decoration: none;
-      vertical-align: middle;
       height: inherit;
       padding: 5px 10px 0 10px;
       border-radius: 5px;
@@ -122,8 +121,6 @@ body {
   padding: 20px 0 0 5px;
   margin: auto;
   background-color: #fcfcfc;
-  width: 100%;
-  height: 100%;
   -webkit-column-count: 4;
      -moz-column-count: 4;
           column-count: 4;
@@ -139,9 +136,8 @@ body {
   display: inline-block;
   background-color: #ffffff;
   border: 1px solid #ebebeb;
-  margin: 0 0 1.5em;
   box-sizing: border-box;
-  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.18);
   border-radius: 10px;
   vertical-align: baseline;
   overflow: hidden;
@@ -149,7 +145,7 @@ body {
   .offer .hover {
     position: absolute;
     z-index: 50;
-    top: 0px;
+    top: 0;
     display: none;
     width: 100%;
     color: #f5f8fc;
@@ -158,7 +154,7 @@ body {
     text-shadow: 0 0 0 #f5f8fc;
     text-align: center; }
     .offer .hover div {
-      background-color: #3b5342;
+      background-color: #94dcec;
       cursor: pointer; }
     .offer .hover .buttons {
       padding: 0;
@@ -197,7 +193,7 @@ body {
   width: 100%;
   display: block; }
 
-.image div {
+.offer-image div {
   width: 220px; }
 
 .info {

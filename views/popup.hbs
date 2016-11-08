@@ -64,7 +64,7 @@
         </div>
         <div class="popup-social">
             <div class="popup-adds">
-                <span>Добавили к себе</span>
+                <span>{{#length alreadyAdd}}{{/length}} Добавили к себе</span>
                 <div>
                     {{#each alreadyAdd as |adds|}}
                         {{#if this}}
@@ -78,7 +78,7 @@
                 </div>
             </div>
             <div class="popup-likes">
-                <span>Нравится</span>
+                <span>{{#length alreadyLiked}}{{/length}} Нравится</span>
                 <div>
                     {{#each alreadyLiked as |likes|}}
                         {{#if this}}

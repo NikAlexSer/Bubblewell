@@ -205,16 +205,24 @@
 }
 
 .popup-social {
+  font-family: "PF Agora Sans Pro";
+  font-size: 14pt;
   padding: 0;
   .popup-adds {
+    padding: 10px 10px 10px 35px;
     width: 100%;
-    height: 110px;
+    height: 90px;
     background-color: #ffffff;
+    border-bottom: 1px solid lightgrey;
   }
   .popup-likes {
+    padding: 10px 10px 10px 35px;
     width: 100%;
-    height: 110px;
+    height: 90px;
     background-color: #ffffff;
+  }
+  span {
+    padding: 10px;
   }
 }
 

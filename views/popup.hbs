@@ -1,12 +1,21 @@
-{{#with offers}}
+{{#with offers as |offer|}}
     <div class="popup-content" data-number="{{offerID}}">
         <span class="popup-close">Закрыть <span>x</span></span>
-
         <div class="popup-head clearfix">
-            <div>
-                <img class="avatar" src="http://cs6.pikabu.ru/images/big_size_comm/2015-01_1/14203017957828.jpg"/>
-            </div>
+            {{#each ../users as |users|}}
+                {{#compare offer.authorID "==" users.userID}}
+                    <img class="avatar" src="{{avatar}}"/>
+                    <div class="popup-head-name">
+                        <div>{{users.firstName}} {{users.lastName}}</div>
+                        <span>нуждается в этом</span>
+                    </div>
+                    <div class="popup-head-btn">
+                        <a>Добавить в друзья</a>
+                    </div>
+                {{/compare}}
+            {{/each}}
         </div>
+
         <div class="popup-info clearfix">
             <div class="left-column">
                 <h3>{{name}}</h3>
@@ -26,7 +35,7 @@
                 </div>
             </div>
         </div>
-        <div class="feeds row">
+        <div class="feeds">
             {{#each feeds as |feed|}}
                 {{#if this}}
                     {{#compare @index '<' 3}}
@@ -47,34 +56,41 @@
                 {{/if}}
             {{/each}}
             <div class="add-feed">
-                <img class="avatar">
+                <div>
+                    <img class="avatar" src="">
+                </div>
                 <textarea maxlength="500"></textarea>
             </div>
+        </div>
+        <div class="popup-social">
             <div class="popup-adds">
                 <span>Добавили к себе</span>
-                {{#each alreadyAdd as |adds|}}
-                    {{#if this}}
-                        {{#each ../../users as |users|}}
-                            {{#compare adds "==" users.userID}}
-                                <img src="{{users.avatar}}" class="avatar">
-                            {{/compare}}
-                        {{/each}}
-                    {{/if}}
-                {{/each}}
+                <div>
+                    {{#each alreadyAdd as |adds|}}
+                        {{#if this}}
+                            {{#each ../../users as |users|}}
+                                {{#compare adds "==" users.userID}}
+                                    <img src="{{users.avatar}}" class="avatar">
+                                {{/compare}}
+                            {{/each}}
+                        {{/if}}
+                    {{/each}}
+                </div>
             </div>
             <div class="popup-likes">
                 <span>Нравится</span>
-                {{#each alreadyLiked as |likes|}}
-                    {{#if this}}
-                        {{#each ../../users as |users|}}
-                            {{#compare likes "==" users.userID}}
-                                <img src="{{users.avatar}}" class="avatar">
-                            {{/compare}}
-                        {{/each}}
-                    {{/if}}
-                {{/each}}
+                <div>
+                    {{#each alreadyLiked as |likes|}}
+                        {{#if this}}
+                            {{#each ../../users as |users|}}
+                                {{#compare likes "==" users.userID}}
+                                    <img src="{{users.avatar}}" class="avatar">
+                                {{/compare}}
+                            {{/each}}
+                        {{/if}}
+                    {{/each}}
+                </div>
             </div>
         </div>
-    </div>
     </div>
 {{/with}}

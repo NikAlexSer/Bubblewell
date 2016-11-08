@@ -32,28 +32,28 @@
             {{/if}}
         </div>
         <div class="comments-panel">
-            {{#each ../users as |users-av|}}
-                {{#compare users-av.userID "==" ../authorID}}
+            {{#each ../users as |users|}}
+                {{#compare users.userID "==" ../authorID}}
                     <div class="author">
                         <div>
-                            <img src="{{users-av.avatar}}" class="avatar">
+                            <img src="{{users.avatar}}" class="avatar">
                         </div>
                         <div>
-                            <a class="user">{{users-av.firstName}} {{users-av.lastName}}</a>
+                            <a class="user">{{users.firstName}} {{users.lastName}}</a>
                             <span>предлагает</span>
                         </div>
                     </div>
                 {{/compare}}
             {{/each}}
             <div class="comments">
-                {{#each comments as |comment-lol|}}
+                {{#each comments as |comment|}}
                     {{#if this}}
                         {{#compare @index '<' 5}}
-                            {{#if comment-lol.visible}}
+                            {{#if comment.visible}}
                                 <div class="comments-item" data-number="{{@index}}">
-                                    {{#each ../../users as |users-com|}}
-                                        {{#compare comment-lol.userID "==" users-com.userID}}
-                                            <img src="{{users-com.avatar}}" class="avatar">
+                                    {{#each ../../users as |users|}}
+                                        {{#compare comment.userID "==" users.userID}}
+                                            <img src="{{users.avatar}}" class="avatar">
                                         {{/compare}}
                                     {{/each}}
                                     <span class="comment">{{message}}</span>

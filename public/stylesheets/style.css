@@ -155,7 +155,7 @@ body {
     text-shadow: 0 0 0 #f5f8fc;
     text-align: center; }
     .offer .hover div {
-      background-color: #534ae9;
+      background-color: #107e2f;
       cursor: pointer; }
     .offer .hover .buttons {
       padding: 0;
@@ -301,7 +301,8 @@ body {
 .add-active {
   color: #613a9f; }
 
-.offer-active .add-comment, .offer-active .comments {
+.offer-active .add-comment,
+.offer-active .comments {
   display: block !important; }
 
 .delete {

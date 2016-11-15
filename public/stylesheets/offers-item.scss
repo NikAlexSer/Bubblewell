@@ -5,223 +5,83 @@ $green: random(256)-1;
 $blue: random(256)-1;
 
 .offer {
-  position: relative;
-  display: inline-block;
-  background-color: #ffffff;
-  border: 1px solid #ebebeb;
-  box-sizing: border-box;
-  margin-bottom: 15px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.18);
-  border-radius: 10px;
-  vertical-align: baseline;
-  overflow: hidden;
-  width: $offerWidth;
+  position: relative; display: inline-block; background-color: #ffffff; border: 1px solid #ebebeb; box-sizing: border-box; margin-bottom: 15px; box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.18); border-radius: 10px; vertical-align: baseline; overflow: hidden; width: $offerWidth;
   .hover {
-    div {
-      background-color: rgb($red, $green, $blue);
-      cursor: pointer;
-    }
-    position: absolute;
-    z-index: 50;
-    top: 0;
-    display: none;
-    width: 100%;
-    color: #f5f8fc;
-    font-family: "PF Agora Sans Pro";
-    font-size: 10pt;
-    text-shadow: 0 0 0 #f5f8fc;
-    text-align: center;
+    div { background-color: rgb($red, $green, $blue); cursor: pointer; }
+    position: absolute; z-index: 50; top: 0; display: none; width: 100%; color: #f5f8fc; font-family: "PF Agora Sans Pro"; font-size: 10pt; text-shadow: 0 0 0 #f5f8fc; text-align: center;
     .buttons {
-      padding: 0;
-      width: 100%;
-      position: absolute;
-      top: -20px;
-      z-index: 50;
-      font-family: $iconFont;
-      color: #b7b7b7;
-      font-size: 30pt;
-      list-style: none;
-      display: table;
-      li {
-        display: table-cell;
-        vertical-align: middle;
-        cursor: pointer;
-      }
-      .like:hover {
-        color: #9e2385;
-      }
-      .fav:hover {
-        color: #ff1107;
-      }
-      .com:hover {
-        color: #5574ad;
-      }
-      .add:hover {
-        color: #ffdf10;
-      }
+      padding: 0; width: 100%; position: absolute; top: -20px; z-index: 50; font-family: $iconFont; color: #b7b7b7; font-size: 30pt; list-style: none; display: table;
+      li { display: table-cell; vertical-align: middle; cursor: pointer; }
+      .like:hover { color: #9e2385; }
+      .fav:hover { color: #ff1107; }
+      .com:hover { color: #5574ad; }
+      .add:hover { color: #ffdf10; }
     }
   }
 }
 
 .offer:hover {
-  border: 1px solid #abc9e8;
-  box-shadow: 2px -2px rgba(240, 240, 240, 100%);
-  .hover {
-    display: block;
-  }
+  border: 1px solid #abc9e8; box-shadow: 2px -2px rgba(240, 240, 240, 100%);
+  .hover { display: block; }
 }
 
-.offer .image {
-  position: relative;
-  margin: auto;
-  width: 100%;
-  display: block;
-}
+.offer .image { position: relative; margin: auto; width: 100%; display: block; }
 
-.offer-image-wrapper div {
-  width: 220px;
-}
+.offer-image-wrapper div { width: 220px; }
 
 .info {
-  position: relative;
-  font-family: Arial;
-  width: $offerWidth - 30px;
-  padding: 15px 15px 5px 15px;
-  height: 145px;
-  .name {
-    font-weight: bold;
-    font-size: 10pt;
-    padding-bottom: 15px;
+  position: relative; font-family: Arial; width: $offerWidth - 30px; padding: 15px 15px 5px 15px; height: 145px;
+  .name { font-weight: bold; font-size: 10pt; padding-bottom: 15px;
   }
   .tags {
-    color: #a8a8a8;
-    margin-top: 15px;
-    font-size: 8.5pt;
-    .theme .date .geo {
-      width: 100%;
-      display: block;
-    }
+    color: #a8a8a8; margin-top: 15px; font-size: 8.5pt;
+    .theme .date .geo { width: 100%; display: block; }
   }
   .counters {
-    span {
-      cursor: pointer;
-    }
-    position: absolute;
-    bottom: 10px;
-    color: #a8a8a8;
-    font-size: 8.5pt;
-    margin-bottom: -5px;
+    span { cursor: pointer; }
+    position: absolute; bottom: 10px; color: #a8a8a8; font-size: 8.5pt; margin-bottom: -5px;
   }
 }
 
 .comments-panel {
-  background-color: #f1f1f1;
-  font-size: 10pt;
-  width: 100%;
+  background-color: #f1f1f1; font-size: 10pt; width: 100%;
   .author {
-    border-bottom: 1px solid #d7d7d7;
-    height: 40px;
-    padding: 5px 0 0 15px;
+    border-bottom: 1px solid #d7d7d7; height: 40px; padding: 5px 0 0 15px;
     div {
       display: inline-block;
-      img {
-        margin-bottom: 15px;
-      }
+      img { margin-bottom: 15px; }
     }
-    div:last-child {
-      padding-left: 12px;
-    }
-    a {
-      color: #5574ad;
-      cursor: pointer;
-      font-family: "PF Agora Sans Pro XThin";
-      text-shadow: 0 0 0 #5574ad;
-    }
-    span {
-      font-family: Arial;
-      display: block;
-      font-style: italic;
-      cursor: default;
-      color: #a8a8a8;
-    }
+    div:last-child { padding-left: 12px; }
+    a { color: #5574ad; cursor: pointer; font-family: "PF Agora Sans Pro XThin"; text-shadow: 0 0 0 #5574ad; }
+    span { font-family: Arial; display: block; font-style: italic; cursor: default; color: #a8a8a8; }
   }
-  .comments {
-    display: none;
-  }
+  .comments { display: none; }
   .comments-item {
-    border-bottom: 1px solid #d7d7d7;
-    font-size: 8.5pt;
-    position: relative;
-    font-family: Arial;
-    height: 40px;
-    padding: 5px 0 0 15px;
-    line-height: 50%;
-    text-shadow: 0 0 0 black;
-    .comment {
-      display: inline-block;
-      height: 36px;
-      width: calc(100% - 66px);
-      margin-left: 15px;
-      margin-top: 5px;
-      line-height: 12pt;
-      max-height: 36px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-    .avatar {
-      display: inline-block;
-      margin-bottom: 35px;
-    }
+    border-bottom: 1px solid #d7d7d7; font-size: 8.5pt; position: relative; font-family: Arial; height: 40px; padding: 5px 0 0 15px; line-height: 50%; text-shadow: 0 0 0 black;
+    .comment { display: inline-block; height: 36px; width: calc(100% - 66px); margin-left: 15px; margin-top: 5px; line-height: 12pt; max-height: 36px; overflow: hidden; text-overflow: ellipsis; }
+    .avatar { display: inline-block; margin-bottom: 35px; }
   }
-  .avatar {
-    height: 25px;
-    width: 25px;
-  }
+  .avatar { height: 25px; width: 25px; }
   .add-comment {
-    margin-top: 5px;
-    margin-left: 15px;
-    height: 40px;
-    display: none;
-    input {
-      width: 150px;
-    }
+    margin-top: 5px; margin-left: 15px; height: 40px; display: none;
+    input { width: 150px; }
   }
 }
 
 .avatar {
-  border-radius: 50%;
-  border: 3px double lightgrey;
-  background-color: white;
-  overflow: hidden;
-  vertical-align: middle;
-  img {
-    margin: auto;
-    width: 100%;
-  }
+  border-radius: 50%; border: 3px double lightgrey; background-color: white; overflow: hidden; vertical-align: middle;
+  img { margin: auto; width: 100%; }
 }
 
-.like-active {
-  color: #b13897;
-}
+.like-active { color: #b13897; }
 
-.comment-active {
-  color: #5574ad;
-}
+.comment-active { color: #5574ad; }
 
-.add-active {
-  color: #613a9f;
-}
+.add-active { color: #613a9f; }
 
 .offer-active {
-  .add-comment, .comments {
-    display: block !important;
-  }
+  .add-comment,
+  .comments { display: block !important; }
 }
 
-.delete {
-  display: none;
-  position: absolute;
-  right: 5px;
-  cursor: pointer;
-  top: 40%;
-}
+.delete { display: none; position: absolute; right: 5px; cursor: pointer; top: 40%; }

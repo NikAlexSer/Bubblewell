@@ -1,228 +1,68 @@
 .popup-bg {
-  z-index: 100;
-  display: none;
-  width: 100%;
-  min-height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  position: fixed;
-  top: 0;
+  z-index: 100; display: none; width: 100%; min-height: 100%; background-color: rgba(0, 0, 0, 0.5); position: fixed; top: 0;
 }
 
 .popup {
-  overflow: auto;
-  height: 800px;
-  margin: 40px auto 0 auto;
-  width: 810px;
-  position: relative;
-  overflow-x: hidden;
-  background-color: #ffffff;
-  border-radius: 5px;
-  box-shadow: 0 0 10px #000;
-  .popup-info {
-    padding: 10px;
-  }
-  .left-column {
-    display: inline-block;
-    float: left;
-    width: 530px;
-    border-right: 1px solid lightgrey;
-    margin-bottom: -10px;
-    padding-right: 40px;
-    padding-left: 40px;
-  }
+  overflow: auto; height: 800px; margin: 40px auto 0 auto; width: 810px; position: relative; overflow-x: hidden; background-color: #ffffff; border-radius: 5px; box-shadow: 0 0 10px #000;
+  .popup-info { padding: 10px; }
+  .left-column { display: inline-block; float: left; width: 530px; border-right: 1px solid lightgrey; margin-bottom: -10px; padding-right: 40px; padding-left: 40px; }
   .right-column {
-    display: inline-block;
-    float: right;
-    width: 160px;
+    display: inline-block; float: right; width: 160px;
     .buttons {
       margin-top: 78px;
-      span {
-        display: block;
-        background: linear-gradient(#d4d4d4, #e8e8e8, #f1f1f1);
-        margin: 5px auto;
-        text-align: center;
-        border-radius: 5px;
-        padding: 5px;
-        max-width: 70%;
-        cursor: pointer;
-        border: 1px solid lightgray;
-      }
+      span { display: block; background: linear-gradient(#d4d4d4, #e8e8e8, #f1f1f1); margin: 5px auto; text-align: center; border-radius: 5px; padding: 5px; max-width: 70%; cursor: pointer; border: 1px solid lightgray; }
     }
   }
-  .gradient {
-    background-image: linear-gradient(0deg, rgba(198, 83, 165, .95) 0%, rgba(198, 86, 51, .95) 100%);
-    mask-image: linear-gradient(0deg, transparent 0%, rgb(0, 0, 0) 100%);
-  }
-  h3 {
-    font-family: "PF Agora Sans Pro";
-    font-weight: bold;
-    font-size: 17pt;
-    margin: 20px 0 0 0;
-  }
-  .offer-type {
-    color: #a3a3a3;
-    display: inline-block;
-    margin-bottom: 7.5px;
-  }
-  .avatar {
-    height: 50px;
-    width: 50px;
-  }
-  .description {
-    font-family: Arial;
-    font-size: 12pt;
-    margin-top: 5px;
-    margin-bottom: 30px;
-    text-shadow: 0 0 0 #000000;
-  }
+  .gradient { background-image: linear-gradient(0deg, rgba(198, 83, 165, .95) 0%, rgba(198, 86, 51, .95) 100%); mask-image: linear-gradient(0deg, transparent 0%, rgb(0, 0, 0) 100%); }
+  h3 { font-family: "PF Agora Sans Pro"; font-weight: bold; font-size: 17pt; margin: 20px 0 0 0; }
+  .offer-type { color: #a3a3a3; display: inline-block; margin-bottom: 7.5px; }
+  .avatar { height: 50px; width: 50px; }
+  .description { font-family: Arial; font-size: 12pt; margin-top: 5px; margin-bottom: 30px; text-shadow: 0 0 0 #000000; }
   .feeds {
-    width: 100%;
-    background: #f1f1f1;
-    .feed {
-      display: table;
-      width: 100%;
-      background: #f1f1f1;
-      vertical-align: middle;
-      padding: 20px 0 20px 35px;
-      border-bottom: 1px solid #d9d9d9;
-    }
-    .avatar-wrapper {
-      height: 50px;
-      display: table-cell;
-      vertical-align: top;
-    }
-    .avatar {
-      height: 50px;
-      width: 50px;
-    }
-    .text {
-      width: 500px;
-      color: #a3a3a3;
-      font-family: Arial;
-      padding-left: 30px;
-      font-size: 10pt;
-      text-shadow: 0 0 0 #a3a3a3;
-      display: inline-block;
-    }
+    width: 100%; background: #f1f1f1;
+    .feed { display: table; width: 100%; background: #f1f1f1; vertical-align: middle; padding: 20px 0 20px 35px; border-bottom: 1px solid #d9d9d9; }
+    .avatar-wrapper { height: 50px; display: table-cell; vertical-align: top; }
+    .avatar { height: 50px; width: 50px; }
+    .text { width: 500px; color: #a3a3a3; font-family: Arial; padding-left: 30px; font-size: 10pt; text-shadow: 0 0 0 #a3a3a3; display: inline-block; }
   }
   .add-feed {
-    width: 100%;
-    background: #f1f1f1;
-    padding: 20px 35px 20px 35px;
-    display: table;
-    div {
-      margin-right: 35px;
-      height: 50px;
-      display: table-cell;
-      vertical-align: middle;
-    }
-    textarea {
-      margin-left: 35px;
-      display: table-cell;
-      width: 645px;
-      height: 55px;
-    }
+    width: 100%; background: #f1f1f1; padding: 20px 35px 20px 35px; display: table;
+    div { margin-right: 35px; height: 50px; display: table-cell; vertical-align: middle; }
+    textarea { margin-left: 35px; display: table-cell; width: 645px; height: 55px; }
   }
 }
 
 .popup-head {
-  width: 100%;
-  margin: -10px;
-  padding: 20px 10px 0 40px;
-  height: 90px;
-  border-bottom: 1px solid lightgrey;
-  .avatar {
-    display: inline-block;
-    height: 75px;
-    width: 75px;
-  }
+  width: 100%; margin: -10px; padding: 20px 10px 0 40px; height: 90px; border-bottom: 1px solid lightgrey;
+  .avatar { display: inline-block; height: 75px; width: 75px; }
   .popup-head-name {
-    display: inline-block;
-    width: 145px;
-    vertical-align: middle;
-    div {
-      font-family: "PF Agora Sans Pro XThin";
-      font-size: 16pt;
-      color: #5574ad;
-      text-shadow: 0 0 0 #5574ad;
-    }
-    span {
-      font-family: Arial;
-      font-style: italic;
-      font-size: 11pt;
-      color: #82848a;
-    }
+    display: inline-block; width: 145px; vertical-align: middle;
+    div { font-family: "PF Agora Sans Pro XThin"; font-size: 16pt; color: #5574ad; text-shadow: 0 0 0 #5574ad; }
+    span { font-family: Arial; font-style: italic; font-size: 11pt; color: #82848a; }
   }
   .popup-head-btn {
-    cursor: pointer;
-    display: inline-block;
-    height: 21px;
-    width: 140px;
-    padding-left: 15px;
-    vertical-align: middle;
-    text-align: center;
+    cursor: pointer; display: inline-block; height: 21px; width: 140px; padding-left: 15px; vertical-align: middle; text-align: center;
     a {
-      font-family: "PF Agora Sans Pro";
-      font-size: 10pt;
-      display: block;
-      color: white;
-      text-decoration: none;
-      vertical-align: middle;
-      height: inherit;
-      padding: 5px 10px 0 10px;
-      border-radius: 5px;
-      background: linear-gradient(#dd3c9d, #9e2385);
-      transition: 0.2s;
-      &:hover {
-        background: linear-gradient(#9e2385, #dd3c9d);
-      }
-      &:active {
-        background: linear-gradient(#ca339b, #9e2385);
-      }
+      font-family: "PF Agora Sans Pro"; font-size: 10pt; display: block; color: white; text-decoration: none; vertical-align: middle; height: inherit; padding: 5px 10px 0 10px; border-radius: 5px; background: linear-gradient(#dd3c9d, #9e2385); transition: 0.2s;
+      &:hover { background: linear-gradient(#9e2385, #dd3c9d); }
+      &:active { background: linear-gradient(#ca339b, #9e2385); }
     }
   }
 }
 
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+.clearfix:after { content: ""; display: table; clear: both; }
 
 .popup-close {
-  position: absolute;
-  right: 10px;
-  top: 5px;
-  cursor: pointer;
-  span {
-    font-family: monospace;
-    font-size: 18px;
-  }
+  position: absolute; right: 10px; top: 5px; cursor: pointer;
+  span { font-family: monospace; font-size: 18px; }
 }
 
-.scroll {
-  overflow: hidden;
-}
+.scroll { overflow: hidden; }
 
 .popup-social {
-  font-family: "PF Agora Sans Pro";
-  font-size: 14pt;
-  padding: 0;
-  .popup-adds {
-    padding: 10px 10px 10px 35px;
-    width: 100%;
-    height: 90px;
-    background-color: #ffffff;
-    border-bottom: 1px solid lightgrey;
-  }
-  .popup-likes {
-    padding: 10px 10px 10px 35px;
-    width: 100%;
-    height: 90px;
-    background-color: #ffffff;
-  }
-  span {
-    padding: 10px;
-  }
+  font-family: "PF Agora Sans Pro"; font-size: 14pt; padding: 0;
+  .popup-adds { padding: 10px 10px 10px 35px; width: 100%; height: 90px; background-color: #ffffff; border-bottom: 1px solid lightgrey; }
+  .popup-likes { padding: 10px 10px 10px 35px; width: 100%; height: 90px; background-color: #ffffff; }
+  span { padding: 10px; }
 }
 

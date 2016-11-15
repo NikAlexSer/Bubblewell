@@ -79,7 +79,8 @@ body {
   .offer-menu-bar .message {
     font-size: 14pt;
     padding-left: 35px; }
-    .offer-menu-bar .message a, .offer-menu-bar .message span {
+    .offer-menu-bar .message a,
+    .offer-menu-bar .message span {
       display: inline-block; }
     .offer-menu-bar .message a {
       text-shadow: 0 0 0 #5574ad;
@@ -155,7 +156,7 @@ body {
     text-shadow: 0 0 0 #f5f8fc;
     text-align: center; }
     .offer .hover div {
-      background-color: #107e2f;
+      background-color: #7e25de;
       cursor: pointer; }
     .offer .hover .buttons {
       padding: 0;

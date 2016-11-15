@@ -1,12 +1,5 @@
-body {
-  width: 100%;
-  margin: 0;
-}
-.wrapper {
-  width: 974px;
-  margin: 0 auto;
-  padding: 20px 35px;
-}
+body { width: 100%; margin: 0; }
+.wrapper { width: 974px; margin: 0 auto; padding: 20px 35px; }
 
 @import "offer-menu-bar.scss";
 @import "offers.scss";

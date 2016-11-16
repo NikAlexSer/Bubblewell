@@ -22,16 +22,16 @@
                 </div>
             <div class="counters">
                 {{#if socialCounters.likeCounter}}
-                    <span class="like-counter">Нравится {{socialCounters.likeCounter}}</span>
+                    <span class="like-counter">Нравится {{#length alreadyLiked}}{{/length}}</span>
                 {{/if}}
                 {{#if socialCounters.commentCounter}}
-                    <span class="comments-counter">Коментариев {{socialCounters.commentCounter}}</span>
+                    <span class="comments-counter">Коментариев {{#length comments}}{{/length}}</span>
                 {{/if}}
                 {{#if socialCounters.feedCounter}}
-                    <span class="feeds-counter">Отзывов {{socialCounters.feedCounter}}</span>
+                    <span class="feeds-counter">Отзывов {{#length feeds}}{{/length}}</span>
                 {{/if}}
                 {{#if socialCounters.addCounter}}
-                    <span class="adds-counter">Добавили к себе {{socialCounters.addCounter}}</span></div>
+                    <span class="adds-counter">Добавили к себе {{#length alreadyAdd}}{{/length}}</span></div>
                 {{/if}}
             </div>
             <div class="comments-panel">

@@ -2,7 +2,7 @@ var controller = (function() {
   var
       users,
       offers,
-      activeUser = '6';
+      activeUser = '5';
 
   /**
    * Получение общих данных и шаблона попапа с вызовом рендера
